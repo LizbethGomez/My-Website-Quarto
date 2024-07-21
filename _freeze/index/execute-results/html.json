@@ -1,8 +1,8 @@
 {
-  "hash": "858ec1a3e66c017f4aea1ecc5f676a98",
+  "hash": "5126d0ee4673e405fbd54bb4bd7d78ce",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Lizbeth Gomez F.\"\n---\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "markdown": "---\ntitle: \"Lizbeth Gomez F.\"\nformat: \n  html:\n    toc: false\n    page-layout: full\nabout:\n  template: trestles\n  image: files/headshot.JPG\n  links:\n    - icon: envelope\n      href: mailto:lg688@drexel.edu\n    - icon: github\n      href: https://github.com/LizbethGomez\n    - text: Google Scholar \n      href: https://scholar.google.com/citations?user=1ZYXZL0AAAAJ&hl=en\n---\n\n::: {.cell}\n\n:::\n\n\nI am a postdoctoral fellow in the Department of Environmental and Occupational Health the Dornsife School of Public Health, Drexel University. I am an environmental epidemiologist with expertise in the role of ambient air pollution and social stress on clinical treatment efficacy among susceptible populations.\n\n### Education\n\n-   **PhD**, Environmental and Occupational Health\n    -   Drexel University\n-   **MPH**, Environmental Health Sciences\n    -   Columbia University\n-   **BSc**, Biology / Chemistry\n    -   CUNY City College of New York\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
