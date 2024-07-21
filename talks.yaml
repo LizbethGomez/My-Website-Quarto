@@ -7,6 +7,24 @@
    subtitle: Dornsife School of Public Health
    image: talks/Defense_thumbnail.png
    path: talks/Jun4_Gomezv5.pdf
+-  title: "Presentation at University of Washington, Kaufman Lab"
+   description: |
+     Oral presentation for Kaufman Lab.
+   author:
+     - name: Lizbeth Gomez F
+   date: '2024-04-29'
+   subtitle: Dissertation Progress Presentation
+   image: talks/Kaufman4.29.24.PNG
+   path: talks/4.29.24_Gomez.pdf
+-  title: ISEE 2023 Early Monrning Session "Leveraging Clinical Trial Data for Environmental Epidemiology Studies: Opportunities and Challenges"
+   description: |
+     Early morning session I organized for ISEE 2023, Kaohsiung,Taiwan
+   author:
+     - name: Lizbeth Gomez F
+   date: '2023-09-21'
+   subtitle: ISEE 2023 EMS
+   image: talks/EMS_Gomez9.24.PNG
+   path: talks/EMS Proposal.pdf
 -  title: STICS Trial 
    description: |
      Oral presentation for ISEE 2021
