@@ -7,7 +7,7 @@ website:
   title: "Lizbeth Gomez F."
   site-url: "http://www.lizbethgomezf.com"
   navbar:
-    search: true
+    search: false
     left:
       - href: about.qmd
       - href: publications.qmd
