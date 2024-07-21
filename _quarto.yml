@@ -17,7 +17,7 @@ website:
       
     right: 
       - text: CV
-        href: "doc/files/Lizbeth Gomez_7.20.24_CV.pdf"
+        href: "docs/files/Lizbeth Gomez_7.20.24_CV.pdf"
     open-graph: true
 format:
   html:
