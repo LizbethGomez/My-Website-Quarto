@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-    - "files/Lizbeth Gómez_7.20.24_CV.pdf"
+    - "files/Lizbeth Gomez_7.20.24_CV.pdf"
 website:
   title: "Lizbeth Gomez F."
   site-url: "http://www.lizbethgomezf.com"
@@ -17,7 +17,7 @@ website:
       
     right: 
       - text: CV
-        href: "files/Lizbeth Gómez_7.20.24_CV.pdf"
+        href: "files/Lizbeth Gomez_7.20.24_CV.pdf"
     open-graph: true
 format:
   html:
