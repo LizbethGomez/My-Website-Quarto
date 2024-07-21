@@ -1,0 +1,31 @@
+project:
+  type: website
+  resources:
+    - "files/Lizbeth Gómez_7.20.24_CV.pdf"
+website:
+  title: "Lizbeth Gomez F."
+  site-url: "http://www.lizbethgomezf.com"
+  navbar:
+    search: false
+    left:
+      - href: about.qmd
+      - href: publications.qmd
+      - href: talks.qmd
+      - href: teaching.qmd
+      #  - text: Home
+      
+    right: 
+      - text: CV
+        href: "files/Lizbeth Gómez_7.20.24_CV.pdf"
+    open-graph: true
+format:
+  html:
+    theme:
+      - Pulse
+execute:
+  echo: false
+  message: false
+  warning: false
+  freeze: auto
+
+

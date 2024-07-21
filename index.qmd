@@ -1,0 +1,28 @@
+---
+title: "Lizbeth Gomez F."
+format: 
+  html:
+    toc: false
+    page-layout: full
+about:
+  template: trestles
+  image: files/headshot.JPG
+  links:
+    - icon: envelope
+      href: mailto:lg688@drexel.edu
+    - icon: github
+      href: https://github.com/LizbethGomez
+    - text: Google Scholar 
+      href: https://scholar.google.com/citations?user=1ZYXZL0AAAAJ&hl=en
+---
+
+I am a postdoctoral fellow in the Department of Environmental and Occupational Health the Dornsife School of Public Health, Drexel University. I am an environmental epidemiologist with expertise in the role of ambient air pollution and social stress on clinical treatment efficacy among susceptible populations.
+
+### Education
+
+-   **PhD**, Environmental and Occupational Health
+    -   Drexel University
+-   **MPH**, Environmental Health Sciences
+    -   Columbia University
+-   **BSc**, Biology / Chemistry
+    -   CUNY City College of New York

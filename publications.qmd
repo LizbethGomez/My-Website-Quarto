@@ -1,0 +1,56 @@
+---
+title: Publications
+format:
+  html:
+    toc: false
+    page-layout: full
+listing:
+  contents: publications.yaml
+  sort-ui: false
+  filter-ui: false
+  type: table
+  fields: [title, Authors, Journal]
+---
+
+```{r}
+library(tidyverse)
+all_pubs <- rmarkdown::pandoc_citeproc_convert("files/citations.ris", type = "list")
+ids <- map_chr(all_pubs, pluck, "id")
+zotero_files <- file.path("~/lizbethgomez/Zotero/My Publications",  paste0(ids, ".pdf"))
+local_files <- file.path("publications",  paste0(ids, ".pdf"))
+walk2(local_files, zotero_files, ~{
+  if (!file.exists(.x) && file.exists(.y)) {
+    file.copy(.y, .x)
+  }
+})
+files <- ifelse(file.exists(local_files), local_files, NA)
+journals <- map_chr(all_pubs, pluck, "container-title")
+titles <- map_chr(all_pubs, pluck, "title")
+authors <- map(all_pubs, pluck, "author")
+safe_family <- function(x) ifelse(is.null(pluck(x, "family")), NA, pluck(x, "family"))
+family_names <- map(map(authors, ~map_chr(.x, safe_family)), na.omit)
+safe_given <- function(x) ifelse(is.null(pluck(x, "given")), NA, str_extract_all(pluck(x, "given"), "[A-Z]"))
+first_initials <- map(map(map(authors, ~map(.x, safe_given)), ~map_chr(map(.x, pluck, 1), str_c, collapse = "")), na.omit)
+pubs <- tibble( journal = journals, title = titles,
+               family = family_names, initials = first_initials, pdf = files) |> 
+  mutate(authors = map2_chr(family, initials, ~str_c(.x,  " ", .y, collapse = ", ")),
+         authors = str_replace_all(authors, "Gomez L,", "**Gomez L,**"),
+         authors = str_replace_all(authors, "Gomez L$", "**Gomez L**"),
+         authors = str_replace_all(authors, "Gomez LH", "**Gomez LF**"),
+         pdf = ifelse(is.na(pdf), "", str_glue('
+|
+    <a href="{pdf}">
+    <i class="bi bi-file-earmark-pdf-fill"></i>
+    </a>
+')),
+         text = str_glue('
+- title: "{title}"
+  Authors: "{authors}"
+  path: https://doi.org/
+  Journal: "{journal}"
+'))
+```
+
+```{r}
+write_lines(c( pubs$text), "publications.yaml")
+```
