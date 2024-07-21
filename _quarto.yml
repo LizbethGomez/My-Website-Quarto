@@ -15,7 +15,6 @@ website:
       - href: talks.qmd
       - href: teaching.qmd
       #  - text: Home
-      
     right: 
       - text: CV
         href: files/Lizbeth Gomez_7.20.24_CV.pdf
