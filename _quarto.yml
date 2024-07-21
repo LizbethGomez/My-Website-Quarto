@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
   resources:
     - "files/Lizbeth Gómez_7.20.24_CV.pdf"
 website:
