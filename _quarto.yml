@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-    - "docs/files/Lizbeth Gomez_7.20.24_CV.pdf"
+  - "docs/files/Lizbeth Gomez_7.20.24_CV.pdf"
 website:
   title: "Lizbeth Gomez F."
   site-url: "http://www.lizbethgomezf.com"
