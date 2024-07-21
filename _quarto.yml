@@ -22,7 +22,7 @@ website:
 format:
   html:
     theme:
-      - Pulse
+      - quartz
 execute:
   echo: false
   message: false
