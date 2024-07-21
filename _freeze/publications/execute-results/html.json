@@ -3,9 +3,7 @@
   "result": {
     "engine": "knitr",
     "markdown": "---\ntitle: Publications\nformat:\n  html:\n    toc: false\n    page-layout: full\nlisting:\n  contents: publications.yaml\n  sort-ui: false\n  filter-ui: false\n  type: table\n  fields: [title, Authors, Journal]\n---\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n",
-    "supporting": [
-      "publications_files"
-    ],
+    "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],
