@@ -23,6 +23,7 @@ format:
   html:
     theme:
       - quartz
+      
 execute:
   echo: false
   message: false
