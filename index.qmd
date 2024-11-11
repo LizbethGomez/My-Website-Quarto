@@ -9,7 +9,7 @@ about:
   image: files/headshot.JPG
   links:
     - icon: envelope
-      href: mailto:lg688@drexel.edu
+      href: mailto:lizbeth.gomez@pennmedicine.upenn.edu
     - icon: github
       href: https://github.com/LizbethGomez
     - text: Google Scholar 
