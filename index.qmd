@@ -1,5 +1,5 @@
 ---
-title: "Lizbeth Gomez F."
+title: "Lizbeth F. Gomez"
 format: 
   html:
     toc: false
