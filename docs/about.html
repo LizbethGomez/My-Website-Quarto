@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lizbeth Gomez F. - About</title>
+<title>About – Lizbeth F. Gomez</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -87,11 +87,11 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Lizbeth Gomez F.</span>
+    <span class="navbar-title">Lizbeth F. Gomez</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -120,7 +120,7 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -129,7 +129,7 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
@@ -164,9 +164,9 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
 </figure>
 </div>
 </div></div></div>
-<p>I am currently a postdoctoral fellow at Drexel University. I completed my doctoral degree at Drexel University’s <a href="https://drexel.edu/dornsife/academics/departments/environmental-occupational-health/eoh-student-profiles/">Dornsife School of Public Health</a> in Philadelphia. Under the guidance of Dr.&nbsp;Jane Clougherty, my research focused on evaluating how social and environmental factors impact the efficacy of pharmaceutical treatments. Prior to this, I earned a Master’s in Public Health with a concentration in Environmental Health Science from <a href="https://www.publichealth.columbia.edu/academics/departments/environmental-health-sciences-ehs">Mailman School of Public Health</a> and a Bachelor’s of Science from the <a href="https://www.ccny.cuny.edu/">City College of New York</a>.</p>
-<p>My research interests are centered around epidemiological and biostatistical methodologies, with a particular focus on disparities in asthma outcomes. These interests originated from my work as a fellow in the Puerto Rico IPE Service Learning Fellowship where I collaborated with a diverse team to develop a community-based participatory and service learning research project in San Juan. Since then, my passion for producing rigorous and reproducible research has continued to grow.</p>
-<p>When I’m not engaged in research, I enjoy being a foodie, hosting friends at home, gardening, baking, reading (including fiction), and tinkering with R stuff.</p>
+<p>I am currently a postdoctoral fellow at University of Pennsylvania. I completed my doctoral degree at Drexel University’s <a href="https://drexel.edu/dornsife/academics/departments/environmental-occupational-health/eoh-student-profiles/">Dornsife School of Public Health</a> in Philadelphia. Under the guidance of Dr.&nbsp;Jane Clougherty, my research focused on evaluating how social and environmental factors impact the efficacy of pharmaceutical treatments. Prior to this, I earned a Master’s in Public Health with a concentration in Environmental Health Science from <a href="https://www.publichealth.columbia.edu/academics/departments/environmental-health-sciences-ehs">Mailman School of Public Health</a> and a Bachelor’s of Science from the <a href="https://www.ccny.cuny.edu/">City College of New York</a>.</p>
+<p>My research interests are centered around epidemiological and biostatistics methodologies, with a particular focus on disparities in asthma outcomes. These interests originated from my work as a fellow in the Puerto Rico IPE Service Learning Fellowship where I collaborated with a diverse team to develop a community-based participatory and service learning research project in San Juan. Since then, my passion for producing rigorous and reproducible research has continued to grow.</p>
+<p>When I’m not engaged in research, I enjoy being a foodie, hosting friends at home, gardening, baking, reading (mostly fiction these days), and tinkering with R stuff.</p>
 
 
 
@@ -206,18 +206,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -249,7 +238,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp("http:\/\/www\.lizbethgomezf\.com");
@@ -257,7 +268,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
