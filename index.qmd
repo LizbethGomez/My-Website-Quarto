@@ -21,7 +21,7 @@ about:
 file.copy("files/Lizbeth Gomez_7.20.24_CV.pdf", "docs/files/Lizbeth Gomez_7.20.24_CV.pdf", overwrite = TRUE)
 ```
 
-I am a postdoctoral fellow in the Department of Biostatistics, Epidemiology and Informatics at the Perelman School of Medicine in UPenn. I am an environmental epidemiologist with expertise in the role of ambient air pollution and social stress on clinical treatment efficacy among susceptible populations.
+I am a postdoctoral fellow in the Department of Biostatistics, Epidemiology and Informatics at the Perelman School of Medicine at UPenn. I am an environmental epidemiologist with expertise in the role of ambient air pollution and social stress on clinical treatment efficacy among susceptible populations.
 
 ### Education
 

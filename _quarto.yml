@@ -22,7 +22,7 @@ website:
 format:
   html:
     theme:
-      - quartz
+      - simplex
       
 execute:
   echo: false
