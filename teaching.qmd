@@ -4,13 +4,13 @@ execute:
   echo: false
 ---
 
-### *Drexel University*
+### Drexel University
 
 #### EOH 812: Environmental Exposure Science
 
-Co-Instructor (spring 2023, spring 2024)
+Co-Instructor (Spring 2023, Spring 2024)
 
-### *Columbia University Mailman School of Public Health*
+### Columbia University Mailman School of Public Health
 
 #### EHSC P8371 - Public Health GIS
 
