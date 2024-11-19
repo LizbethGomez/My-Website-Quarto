@@ -9,48 +9,81 @@ listing:
   sort-ui: false
   filter-ui: false
   type: table
-  fields: [title, Authors, Journal]
+  sort: "date desc"
+  date-format: "YYYY"
+  fields: [title, date, Authors, Journal, PDF]
 ---
+
 
 ```{r}
 library(tidyverse)
-all_pubs <- rmarkdown::pandoc_citeproc_convert("files/citations.ris", type = "list")
-ids <- map_chr(all_pubs, pluck, "id")
-zotero_files <- file.path("~/lizbethgomez/Zotero/My Publications",  paste0(ids, ".pdf"))
-local_files <- file.path("publications",  paste0(ids, ".pdf"))
-walk2(local_files, zotero_files, ~{
-  if (!file.exists(.x) && file.exists(.y)) {
-    file.copy(.y, .x)
-  }
-})
-files <- ifelse(file.exists(local_files), local_files, NA)
-journals <- map_chr(all_pubs, pluck, "container-title")
-titles <- map_chr(all_pubs, pluck, "title")
-authors <- map(all_pubs, pluck, "author")
-safe_family <- function(x) ifelse(is.null(pluck(x, "family")), NA, pluck(x, "family"))
-family_names <- map(map(authors, ~map_chr(.x, safe_family)), na.omit)
-safe_given <- function(x) ifelse(is.null(pluck(x, "given")), NA, str_extract_all(pluck(x, "given"), "[A-Z]"))
-first_initials <- map(map(map(authors, ~map(.x, safe_given)), ~map_chr(map(.x, pluck, 1), str_c, collapse = "")), na.omit)
-pubs <- tibble( journal = journals, title = titles,
-               family = family_names, initials = first_initials, pdf = files) |> 
-  mutate(authors = map2_chr(family, initials, ~str_c(.x,  " ", .y, collapse = ", ")),
-         authors = str_replace_all(authors, "Gomez L,", "**Gomez L,**"),
-         authors = str_replace_all(authors, "Gomez L$", "**Gomez L**"),
-         authors = str_replace_all(authors, "Gomez LH", "**Gomez LF**"),
-         pdf = ifelse(is.na(pdf), "", str_glue('
-|
-    <a href="{pdf}">
-    <i class="bi bi-file-earmark-pdf-fill"></i>
-    </a>
-')),
-         text = str_glue('
-- title: "{title}"
-  Authors: "{authors}"
-  path: https://doi.org/
-  Journal: "{journal}"
-'))
-```
+library(stringr)
 
-```{r}
-write_lines(c( pubs$text), "publications.yaml")
+# Safely extract data with fallbacks to NA
+extract_field <- function(data, field, default = NA_character_) {
+  map_chr(data, ~pluck(.x, field, .default = default))
+}
+
+# Load and parse publication data
+all_pubs <- tryCatch({
+  rmarkdown::pandoc_citeproc_convert("files/Exported Items.ris", type = "list")
+}, error = function(e) {
+  stop("Failed to read the .ris file. Please check for formatting issues.")
+})
+
+# Extract relevant fields with safe fallbacks
+ids <- extract_field(all_pubs, "id")
+local_files <- file.path("publications", paste0(ids, ".pdf"))
+files <- ifelse(file.exists(local_files), local_files, NA_character_)
+
+dois <- extract_field(all_pubs, "DOI")
+journals <- extract_field(all_pubs, "container-title")
+titles <- extract_field(all_pubs, "title")
+years <- map_dbl(all_pubs, ~pluck(.x, "issued", "date-parts", 1, 1, .default = NA_real_))
+authors <- map(all_pubs, ~pluck(.x, "author", .default = list()))
+
+# Extract author family names and initials safely
+safe_family <- function(x) ifelse(is.null(pluck(x, "family")), NA_character_, pluck(x, "family"))
+safe_given <- function(x) ifelse(is.null(pluck(x, "given")), NA_character_, str_extract_all(pluck(x, "given"), "[A-Z]"))
+
+family_names <- map(authors, ~map_chr(.x, safe_family))
+first_initials <- map(authors, ~map_chr(.x, ~str_c(map_chr(safe_given(.x), str_c, collapse = ""), collapse = "")))
+
+# Handle cases where author lists might be empty
+family_names <- map_chr(family_names, ~ifelse(length(.x) == 0, "NA", str_c(.x, collapse = ", ")))
+first_initials <- map_chr(first_initials, ~ifelse(length(.x) == 0, "NA", str_c(.x, collapse = ", ")))
+
+# Create the final publications tibble
+pubs <- tibble(
+  doi = dois,
+  journal = journals,
+  title = titles,
+  year = years,
+  authors = str_c(family_names, " ", first_initials),
+  pdf = files
+) %>%
+  mutate(
+    authors = str_replace_all(authors, "Gomez L,", "**Gomez L,**"),
+    authors = str_replace_all(authors, "Gomez L$", "**Gomez L**"),
+    authors = str_replace_all(authors, "Gomez LH", "**Gomez LF**"),
+    pdf = ifelse(is.na(pdf), "", str_glue('
+    |
+        <a href="{pdf}">
+        <i class="bi bi-file-earmark-pdf-fill"></i>
+        </a>
+    ')),
+    path = ifelse(is.na(doi), "", str_glue("https://doi.org/{doi}")),
+    date = ifelse(is.na(year), "unknown", str_glue("{year}-01-01")),
+    text = str_glue('
+    - title: "{title}"
+      Authors: "{authors}"
+      date: {date}
+      path: {path}
+      Journal: "{journal}"
+      PDF: {pdf}
+    ')
+  )
+
+# Write formatted output to publications.yaml
+write_lines(c(pubs$text), "publications.yaml")
 ```
