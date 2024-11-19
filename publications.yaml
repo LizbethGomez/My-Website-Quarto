@@ -1,33 +1,48 @@
-- title: "Asthma Treatment Efficacy Modification by Healthcare Access: A Reanalysis of AsthmaNet Step-Up Yellow Zone Inhaled Corticosteroids to Prevent Exacerbations (STICS) Clinical Trial"
-  Authors: "**Gomez, Lizbeth F Gómez**, Ellen Kinnee, Joel D Kaufman, Michael T Young, Anne M Fitzpatrick, Wanda Phipatanakul, David T Mauger, Leslie A McClure, Usama Bilal, Fernando Holguin, Jane E Clougherty"
+- title: "Abstract MP31: Blood DNA Methylation Signatures of Incident Coronary Heart Disease: An Epigenome-wide Analysis in the Strong Heart Study"
+  Authors: "Navas-Acien, Domingo-Relloso, Tellez-Plaza, Gomez, Herreros, Devereux, Baccarelli, Umans, Howard, Zhao A, A, M, L, M, RB, A, JG, B, J"
+  date: 2020-01-01
+  path: https://doi.org/https://doi.org/10.1161/circ.141.suppl_1.MP31
+  Journal: "Circulation"
+  PDF: 
+- title: "Common DNA methylation signatures of arsenic exposure and incident cardiovascular disease in the Strong Heart Study"
+  Authors: "Domingo-Relloso, Tellez-Plaza, Bozack, Gomez, Herreros, Devereux, Baccarelli, Umans, Howard, Zhao A, M, A, L, M, R, A, J, B, J"
+  date: 2020-01-01
+  path: https://doi.org/https://doi.org/10.1289/isee.2020.virtual.O-OS-130
+  Journal: "ISEE Conference Abstracts"
+  PDF: 
+- title: "Modification of Asthma Clinical Trial Treatment Efficacy by Social and Environmental Exposures"
+  Authors: "Gomez, Kinnee, Kaufman, Holguin, Young, Clougherty L, E, JD, F, MT, JE"
+  date: 2021-01-01
+  path: https://doi.org/https://doi.org/10.1289/isee.2021.O-TO-084
+  Journal: "ISEE Conference Abstracts"
+  PDF: 
+- title: "Blood DNA methylation and incident coronary heart disease: evidence from the strong heart study"
+  Authors: "Navas-Acien, Domingo-Relloso, Subedi, Riffo-Campos, Xia, Gomez, Haack, Goldsmith, Howard, Best A, A, P, AL, R, L, K, J, BV, LG"
+  date: 2021-01-01
+  path: https://doi.org/https://jamanetwork.com/journals/jamacardiology/fullarticle/2782550
+  Journal: "JAMA cardiology"
+  PDF: 
+- title: "PM2. 5 and NO2 as Potential Modifiers of Clinical Trial Results on Asthma Exacerbation and Control"
+  Authors: "Gomez, Kinnee, Kaufman, Mauger, Holguin, Clougherty L, EJ, JD, DT, F, JE"
+  date: 2022-01-01
+  path: https://doi.org/https://doi.org/10.1289/isee.2022.P-1238
+  Journal: "ISEE Conference Abstracts"
+  PDF: 
+- title: "Estimated Travel Time and Distance to Trial Site: Modifiers of Step-Up Treatment Efficacy in Black Adults with Poorly Controlled Asthma"
+  Authors: "Gomez, Kinnee, Holguin, Clougherty L, E, F, JE"
+  date: 2023-01-01
+  path: https://doi.org/https://doi.org/10.1289/isee.2023.MP-097
+  Journal: "ISEE Conference Abstracts"
+  PDF: 
+- title: "Modification in Responses to Asthma Treatment by Environmental and Social Exposures: A Secondary Analysis of AsthmaNet Clinical Trials - Drexel University"
+  Authors: "**Gomez LF**"
+  date: unknown
+  path: 
+  Journal: "NA"
+  PDF: 
+- title: "Modification of asthma treatment efficacy by healthcare access: A reanalysis of AsthmaNet Step-Up Yellow Zone Inhaled Corticosteroids to Prevent Exacerbations (STICS) clinical trial"
+  Authors: "Gómez, Kinnee, Kaufman, Young, Fitzpatrick, Phipatanakul, Mauger, McClure, Bilal, Holguin, Clougherty LF, E, JD, MT, AM, W, DT, LA, U, F, JE"
+  date: 2024-01-01
   path: https://doi.org/10.1016/j.rmed.2024.107853
   Journal: "Respiratory Medicine"
-- title: "Modification in Responses to Asthma Treatment by Environmental and Social Exposures: A Secondary Analysis of AsthmaNet Clinical Trials"
-  Authors: "Lizbeth F. Gomez"
-  path: https://doi.org/10.17918/00010566
-  Publisher: "Drexel University"
-- title: "Abstract MP31: Blood DNA Methylation Signatures of Incident Coronary Heart Disease: An Epigenome-wide Analysis in the Strong Heart Study"
-  Authors: "Navas-Acien A, Domingo-Relloso A, Tellez-Plaza M, **Gomez LF,** Herreros M, Devereux RB, Baccarelli A, Umans JG, Howard B, Zhao J"
-  path: https://doi.org/10.1161/circ.141.suppl_1.MP31
-  Journal: "Circulation"
-- title: "Common DNA methylation signatures of arsenic exposure and incident cardiovascular disease in the Strong Heart Study"
-  Authors: "Domingo-Relloso A, Tellez-Plaza M, Bozack A, **Gomez L,** Herreros M, Devereux R, Baccarelli A, Umans J, Howard B, Zhao J"
-  path: https://doi.org/10.1289/isee.2020.virtual.O-OS-130
-  Journal: "ISEE Conference Abstracts"
-- title: "Modification of Asthma Clinical Trial Treatment Efficacy by Social and Environmental Exposures"
-  Authors: "**Gomez L,** Kinnee E, Kaufman JD, Holguin F, Young MT, Clougherty JE"
-  path: https://doi.org/10.1289/isee.2021.O-TO-084
-  Journal: "ISEE Conference Abstracts"
-- title: "Blood DNA methylation and incident coronary heart disease: evidence from the strong heart study"
-  Authors: "Navas-Acien A, Domingo-Relloso A, Subedi P, Riffo-Campos AL, Xia R, **Gomez L,** Haack K, Goldsmith J, Howard BV, Best LG"
-  path: https://jamanetwork.com/journals/jamacardiology/fullarticle/2782550
-  Journal: "JAMA cardiology"
-- title: "PM2.5 and NO2 as Potential Modifiers of Clinical Trial Results on Asthma Exacerbation and Control"
-  Authors: "**Gomez L,** Kinnee EJ, Kaufman JD, Mauger DT, Holguin F, Clougherty JE"
-  path: https://doi.org/10.1289/isee.2022.P-1238
-  Journal: "ISEE Conference Abstracts"
-- title: "Estimated Travel Time and Distance to Trial Site: Modifiers of Step-Up Treatment Efficacy in Black Adults with Poorly Controlled Asthma"
-  Authors: "**Gomez L,** Kinnee E, Holguin F, Clougherty JE"
-  path: https://doi.org/10.1289/isee.2023.MP-097
-  Journal: "ISEE Conference Abstracts"
-
+  PDF: 
