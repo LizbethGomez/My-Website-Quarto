@@ -14,7 +14,6 @@ listing:
   fields: [title, date, Authors, Journal, PDF]
 ---
 
-
 ```{r}
 library(tidyverse)
 library(stringr)

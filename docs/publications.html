@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-Authors','listing-Journal',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-date','listing-Authors','listing-Journal','listing-PDF',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-title-sort'] },{ data: ['listing-date-sort'] }],
       
-      searchColumns: ["listing-title","listing-Authors","listing-Journal"],
+      searchColumns: ["listing-title","listing-Authors","listing-date","listing-Journal","listing-PDF"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -224,89 +224,154 @@ window.Quarto = {
 Title
 </th>
 <th>
+Date
+</th>
+<th>
 Authors
 </th>
 <th>
 Journal
 </th>
+<th>
+PDF
+</th>
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-listing-title-sort="Abstract MP31: Blood DNA Methylation Signatures of Incident Coronary Heart Disease: An Epigenome-wide Analysis in the Strong Heart Study">
+<tr data-index="0" data-listing-date-sort="1704085200000" data-listing-title-sort="Modification of asthma treatment efficacy by healthcare access: A reanalysis of AsthmaNet Step-Up Yellow Zone Inhaled Corticosteroids to Prevent Exacerbations (STICS) clinical trial">
 <td>
-<a href="https://doi.org/" class="title listing-title">Abstract MP31: Blood DNA Methylation Signatures of Incident Coronary Heart Disease: An Epigenome-wide Analysis in the Strong Heart Study</a>
+<a href="https://doi.org/10.1016/j.rmed.2024.107853" class="title listing-title">Modification of asthma treatment efficacy by healthcare access: A reanalysis of AsthmaNet Step-Up Yellow Zone Inhaled Corticosteroids to Prevent Exacerbations (STICS) clinical trial</a>
 </td>
 <td>
-<span class="listing-Authors">Navas-Acien A, Domingo-Relloso A, Tellez-Plaza M, <strong>Gomez L,</strong> Herreros M, Devereux RB, Baccarelli A, Umans JG, Howard B, Zhao J</span>
+<span class="listing-date">2024</span>
 </td>
 <td>
-<span class="listing-Journal">Circulation</span>
+<span class="listing-Authors">Gómez, Kinnee, Kaufman, Young, Fitzpatrick, Phipatanakul, Mauger, McClure, Bilal, Holguin, Clougherty LF, E, JD, MT, AM, W, DT, LA, U, F, JE</span>
+</td>
+<td>
+<span class="listing-Journal">Respiratory Medicine</span>
+</td>
+<td>
+<span class="listing-PDF">&nbsp;</span>
 </td>
 </tr>
-<tr data-index="1" data-listing-title-sort="Common DNA methylation signatures of arsenic exposure and incident cardiovascular disease in the Strong Heart Study">
+<tr data-index="1" data-listing-date-sort="1704085200000" data-listing-title-sort="Modification in Responses to Asthma Treatment by Environmental and Social Exposures: A Secondary Analysis of AsthmaNet Clinical Trials">
 <td>
-<a href="https://doi.org/" class="title listing-title">Common DNA methylation signatures of arsenic exposure and incident cardiovascular disease in the Strong Heart Study</a>
+<span class="listing-title">Modification in Responses to Asthma Treatment by Environmental and Social Exposures: A Secondary Analysis of AsthmaNet Clinical Trials</span>
 </td>
 <td>
-<span class="listing-Authors">Domingo-Relloso A, Tellez-Plaza M, Bozack A, <strong>Gomez L,</strong> Herreros M, Devereux R, Baccarelli A, Umans J, Howard B, Zhao J</span>
+<span class="listing-date">2024</span>
+</td>
+<td>
+<span class="listing-Authors"><strong>Gomez L</strong></span>
+</td>
+<td>
+<span class="listing-Journal">NA</span>
+</td>
+<td>
+<span class="listing-PDF">&nbsp;</span>
+</td>
+</tr>
+<tr data-index="2" data-listing-date-sort="1672549200000" data-listing-title-sort="Estimated Travel Time and Distance to Trial Site: Modifiers of Step-Up Treatment Efficacy in Black Adults with Poorly Controlled Asthma">
+<td>
+<a href="https://doi.org/https://doi.org/10.1289/isee.2023.MP-097" class="title listing-title">Estimated Travel Time and Distance to Trial Site: Modifiers of Step-Up Treatment Efficacy in Black Adults with Poorly Controlled Asthma</a>
+</td>
+<td>
+<span class="listing-date">2023</span>
+</td>
+<td>
+<span class="listing-Authors">Gomez, Kinnee, Holguin, Clougherty L, E, F, JE</span>
 </td>
 <td>
 <span class="listing-Journal">ISEE Conference Abstracts</span>
 </td>
-</tr>
-<tr data-index="2" data-listing-title-sort="Modification of Asthma Clinical Trial Treatment Efficacy by Social and Environmental Exposures">
 <td>
-<a href="https://doi.org/" class="title listing-title">Modification of Asthma Clinical Trial Treatment Efficacy by Social and Environmental Exposures</a>
+<span class="listing-PDF">&nbsp;</span>
+</td>
+</tr>
+<tr data-index="3" data-listing-date-sort="1641013200000" data-listing-title-sort="PM2. 5 and NO2 as Potential Modifiers of Clinical Trial Results on Asthma Exacerbation and Control">
+<td>
+<a href="https://doi.org/https://doi.org/10.1289/isee.2022.P-1238" class="title listing-title">PM2. 5 and NO2 as Potential Modifiers of Clinical Trial Results on Asthma Exacerbation and Control</a>
 </td>
 <td>
-<span class="listing-Authors"><strong>Gomez L,</strong> Kinnee E, Kaufman JD, Holguin F, Young MT, Clougherty JE</span>
+<span class="listing-date">2022</span>
+</td>
+<td>
+<span class="listing-Authors">Gomez, Kinnee, Kaufman, Mauger, Holguin, Clougherty L, EJ, JD, DT, F, JE</span>
 </td>
 <td>
 <span class="listing-Journal">ISEE Conference Abstracts</span>
 </td>
-</tr>
-<tr data-index="3" data-listing-title-sort="Blood DNA methylation and incident coronary heart disease: evidence from the strong heart study">
 <td>
-<a href="https://doi.org/" class="title listing-title">Blood DNA methylation and incident coronary heart disease: evidence from the strong heart study</a>
+<span class="listing-PDF">&nbsp;</span>
+</td>
+</tr>
+<tr data-index="4" data-listing-date-sort="1609477200000" data-listing-title-sort="Modification of Asthma Clinical Trial Treatment Efficacy by Social and Environmental Exposures">
+<td>
+<a href="https://doi.org/https://doi.org/10.1289/isee.2021.O-TO-084" class="title listing-title">Modification of Asthma Clinical Trial Treatment Efficacy by Social and Environmental Exposures</a>
 </td>
 <td>
-<span class="listing-Authors">Navas-Acien A, Domingo-Relloso A, Subedi P, Riffo-Campos AL, Xia R, <strong>Gomez L,</strong> Haack K, Goldsmith J, Howard BV, Best LG</span>
+<span class="listing-date">2021</span>
+</td>
+<td>
+<span class="listing-Authors">Gomez, Kinnee, Kaufman, Holguin, Young, Clougherty L, E, JD, F, MT, JE</span>
+</td>
+<td>
+<span class="listing-Journal">ISEE Conference Abstracts</span>
+</td>
+<td>
+<span class="listing-PDF">&nbsp;</span>
+</td>
+</tr>
+<tr data-index="5" data-listing-date-sort="1609477200000" data-listing-title-sort="Blood DNA methylation and incident coronary heart disease: evidence from the strong heart study">
+<td>
+<a href="https://doi.org/https://jamanetwork.com/journals/jamacardiology/fullarticle/2782550" class="title listing-title">Blood DNA methylation and incident coronary heart disease: evidence from the strong heart study</a>
+</td>
+<td>
+<span class="listing-date">2021</span>
+</td>
+<td>
+<span class="listing-Authors">Navas-Acien, Domingo-Relloso, Subedi, Riffo-Campos, Xia, Gomez, Haack, Goldsmith, Howard, Best A, A, P, AL, R, L, K, J, BV, LG</span>
 </td>
 <td>
 <span class="listing-Journal">JAMA cardiology</span>
 </td>
-</tr>
-<tr data-index="4" data-listing-title-sort="PM2. 5 and NO2 as Potential Modifiers of Clinical Trial Results on Asthma Exacerbation and Control">
 <td>
-<a href="https://doi.org/" class="title listing-title">PM2. 5 and NO2 as Potential Modifiers of Clinical Trial Results on Asthma Exacerbation and Control</a>
+<span class="listing-PDF">&nbsp;</span>
+</td>
+</tr>
+<tr data-index="6" data-listing-date-sort="1577854800000" data-listing-title-sort="Abstract MP31: Blood DNA Methylation Signatures of Incident Coronary Heart Disease: An Epigenome-wide Analysis in the Strong Heart Study">
+<td>
+<a href="https://doi.org/https://doi.org/10.1161/circ.141.suppl_1.MP31" class="title listing-title">Abstract MP31: Blood DNA Methylation Signatures of Incident Coronary Heart Disease: An Epigenome-wide Analysis in the Strong Heart Study</a>
 </td>
 <td>
-<span class="listing-Authors"><strong>Gomez L,</strong> Kinnee EJ, Kaufman JD, Mauger DT, Holguin F, Clougherty JE</span>
+<span class="listing-date">2020</span>
+</td>
+<td>
+<span class="listing-Authors">Navas-Acien, Domingo-Relloso, Tellez-Plaza, Gomez, Herreros, Devereux, Baccarelli, Umans, Howard, Zhao A, A, M, L, M, RB, A, JG, B, J</span>
+</td>
+<td>
+<span class="listing-Journal">Circulation</span>
+</td>
+<td>
+<span class="listing-PDF">&nbsp;</span>
+</td>
+</tr>
+<tr data-index="7" data-listing-date-sort="1577854800000" data-listing-title-sort="Common DNA methylation signatures of arsenic exposure and incident cardiovascular disease in the Strong Heart Study">
+<td>
+<a href="https://doi.org/https://doi.org/10.1289/isee.2020.virtual.O-OS-130" class="title listing-title">Common DNA methylation signatures of arsenic exposure and incident cardiovascular disease in the Strong Heart Study</a>
+</td>
+<td>
+<span class="listing-date">2020</span>
+</td>
+<td>
+<span class="listing-Authors">Domingo-Relloso, Tellez-Plaza, Bozack, Gomez, Herreros, Devereux, Baccarelli, Umans, Howard, Zhao A, M, A, L, M, R, A, J, B, J</span>
 </td>
 <td>
 <span class="listing-Journal">ISEE Conference Abstracts</span>
 </td>
-</tr>
-<tr data-index="5" data-listing-title-sort="Estimated Travel Time and Distance to Trial Site: Modifiers of Step-Up Treatment Efficacy in Black Adults with Poorly Controlled Asthma">
 <td>
-<a href="https://doi.org/" class="title listing-title">Estimated Travel Time and Distance to Trial Site: Modifiers of Step-Up Treatment Efficacy in Black Adults with Poorly Controlled Asthma</a>
-</td>
-<td>
-<span class="listing-Authors"><strong>Gomez L,</strong> Kinnee E, Holguin F, Clougherty JE</span>
-</td>
-<td>
-<span class="listing-Journal">ISEE Conference Abstracts</span>
-</td>
-</tr>
-<tr data-index="6" data-listing-title-sort="Asthma Treatment Efficacy Modification by Healthcare Access: A Reanalysis of AsthmaNet Step-Up Yellow Zone Inhaled Corticosteroids to Prevent Exacerbations (STICS) Clinical Trial">
-<td>
-<a href="https://doi.org/" class="title listing-title">Asthma Treatment Efficacy Modification by Healthcare Access: A Reanalysis of AsthmaNet Step-Up Yellow Zone Inhaled Corticosteroids to Prevent Exacerbations (STICS) Clinical Trial</a>
-</td>
-<td>
-<span class="listing-Authors"><strong>Gomez L,</strong> Clougherty JE, Holguin F, Kinnee EJ, Kaufman JD, Young MT, Fitzpatrick AM, Phipatanakul W, Mauger D, McClure LA</span>
-</td>
-<td>
-<span class="listing-Journal">Available at SSRN 4784559</span>
+<span class="listing-PDF">&nbsp;</span>
 </td>
 </tr>
 </tbody>

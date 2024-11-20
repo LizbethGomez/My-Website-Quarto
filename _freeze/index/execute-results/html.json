@@ -1,9 +1,11 @@
 {
-  "hash": "7956d26c97cdca5e0bd9fe0dcadaba12",
+  "hash": "6f1ad1a53118760fae5ef7a84069048f",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"Lizbeth F. Gomez\"\nformat: \n  html:\n    toc: false\n    page-layout: full\nabout:\n  template: trestles\n  image: files/IMG_1004.jpg\n  links:\n    - icon: envelope\n      href: mailto:lizbeth.gomez@pennmedicine.upenn.edu\n    - icon: github\n      href: https://github.com/LizbethGomez\n    - text: Google Scholar \n      href: https://scholar.google.com/citations?user=1ZYXZL0AAAAJ&hl=en\n---\n\n::: {.cell}\n\n:::\n\n\n\nI am a postdoctoral fellow in the Department of Biostatistics, Epidemiology and Informatics at the Perelman School of Medicine at UPenn. I am an environmental epidemiologist with expertise in the role of ambient air pollution and social stress on clinical treatment efficacy among susceptible populations.\n\n### Education\n\n-   **PhD**, Environmental and Occupational Health\n    -   Drexel University\n-   **MPH**, Environmental Health Sciences\n    -   Columbia University\n-   **BSc**, Biology / Chemistry\n    -   CUNY City College of New York\n",
-    "supporting": [],
+    "markdown": "---\ntitle: \"Lizbeth F. Gomez\"\nformat: \n  html:\n    toc: false\n    page-layout: full \nabout:\n  template: trestles\n  image: files/IMG_1004.jpg\n  links:\n    - icon: envelope\n      href: mailto:lizbeth.gomez@pennmedicine.upenn.edu\n    - icon: github\n      href: https://github.com/LizbethGomez\n    - text: Google Scholar \n      href: https://scholar.google.com/citations?user=1ZYXZL0AAAAJ&hl=en\n---\n\n::: {.cell}\n\n```{.r .cell-code}\nfile.copy(\"files/Lizbeth Gomez_7.20.24_CV.pdf\", \"docs/files/Lizbeth Gomez_7.20.24_CV.pdf\", overwrite = TRUE)\n```\n:::\n\n\n\n\n\nI am a postdoctoral fellow in the Department of Biostatistics, Epidemiology and Informatics at the Perelman School of Medicine at UPenn. I am an environmental epidemiologist with expertise in the role of ambient air pollution and social stress on clinical treatment efficacy among susceptible populations.\n\n### Education\n\n-   **PhD**, Environmental and Occupational Health\n    -   Drexel University\n-   **MPH**, Environmental Health Sciences\n    -   Columbia University\n-   **BSc**, Biology / Chemistry\n    -   CUNY City College of New York\n",
+    "supporting": [
+      "index_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

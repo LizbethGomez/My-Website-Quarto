@@ -108,15 +108,6 @@ DO  - https://doi.org/10.1289/isee.2023.MP-097
 VL  - 2023
 ER  - 
 
-TY  - ELEC
-TI  - Modification in Responses to Asthma Treatment by Environmental and Social Exposures: A Secondary Analysis of AsthmaNet Clinical Trials - Drexel University
-AU  - Gomez, Lizbeth
-AB  - English: Randomized controlled trials (RCTs) are considered the gold standard of evidence for estimating causal effects in the health sciences, and evidence from trials is highly regarded in health-related decision-making that impacts entire populations. While rigorous in design, RCTs can still be flawed, particularly concerning their generalizability. This dissertation leverages data on the environmental and social context from trial participants to address RCT limitations, focusing on asthma, a condition notably influenced by air pollution and social stressors. Specifically, it evaluates the potential for asthma treatment efficacy to be modified by spatially heterogeneous environmental and social co-exposures in three AsthmaNet trials. This work incorporates Geographic Information System (GIS)-derived spatial measures to provide a comprehensive understanding of the interaction between these co-exposures and asthma treatment outcomes and introduces a novel way to identify subgroups for whom asthma interventions may be differentially effective. Overall, this dissertation highlights the need for further consideration of social and environmental context in RCTs. It aims to demonstrate how co-occurring social and environmental covariates can modify treatment efficacy during asthma clinical trials thereby narrowing the efficacy-effectiveness gap. Spanish: Los ensayos controlados aleatorios se consideran el estándar de la evidencia para estimar los efectos causales en las ciencias de la salud, y la evidencia de los ensayos es muy apreciada en la toma de decisiones relacionadas con la salud que impactan a poblaciones enteras. Si bien son rigurosos en su diseño, estos aún pueden tener fallas, particularmente en lo que respecta a su generalización. Esta disertación aprovecha los datos sobre el contexto ambiental y social de los participantes de tres ensayos del grupo AsthmaNet, para abordar las limitaciones de los ensayos controlados aleatorios, centrándose en el asma, una afección notablemente influenciada por la contaminación del aire y los factores estresantes sociales. Específicamente, evalúa la posibilidad de que la eficacia del tratamiento del asma se modifique mediante coexposiciones ambientales y sociales espacialmente heterogéneas. Este trabajo incorpora medidas espaciales derivadas del Sistema de Información Geográfica (GIS) para proporcionar una comprensión integral de la interacción entre estas coexposiciones y los resultados del tratamiento del asma e introduce una forma novedosa de identificar subgrupos para quienes las intervenciones contra el asma pueden ser diferencialmente efectivas. En general, esta disertación destaca la necesidad de una mayor consideración del contexto social y ambiental en los ensayos controlados aleatorios. Su objetivo es demostrar cómo las covariables sociales y ambientales concurrentes pueden modificar la eficacia del tratamiento durante los ensayos clínicos sobre el asma, reduciendo así la brecha eficacia-efectividad.
-UR  - https://researchdiscovery.drexel.edu/esploro/outputs/doctoral/991021890114104721
-Y2  - 2024/11/18/22:58:49
-L2  - files/1810/991021890114104721.html
-ER  - 
-
 TY  - JOUR
 TI  - Modification of asthma treatment efficacy by healthcare access: A reanalysis of AsthmaNet Step-Up Yellow Zone Inhaled Corticosteroids to Prevent Exacerbations (STICS) clinical trial
 AU  - Gómez, Lizbeth F.
@@ -144,8 +135,25 @@ UR  - https://www.sciencedirect.com/science/article/pii/S0954611124003287
 Y2  - 2024/11/18/23:00:31
 L2  - files/1812/S0954611124003287.html
 KW  - ICS
+KW  - SDOH
 KW  - Pediatric asthma
 KW  - RCT
-KW  - SDOH
+ER  - 
+
+TY  - MANSCPT
+TI  - Modification in Responses to Asthma Treatment by Environmental and Social Exposures: A Secondary Analysis of AsthmaNet Clinical Trials
+AU  - Gomez, Lizbeth
+AB  - English: Randomized controlled trials (RCTs) are considered the gold standard of evidence for estimating causal effects in the health sciences, and evidence from trials is highly regarded in health-related decision-making that impacts entire populations. While rigorous in design, RCTs can still be flawed, particularly concerning their generalizability. This dissertation leverages data on the environmental and social context from trial participants to address RCT limitations, focusing on asthma, a condition notably influenced by air pollution and social stressors. Specifically, it evaluates the potential for asthma treatment efficacy to be modified by spatially heterogeneous environmental and social co-exposures in three AsthmaNet trials. This work incorporates Geographic Information System (GIS)-derived spatial measures to provide a comprehensive understanding of the interaction between these co-exposures and asthma treatment outcomes and introduces a novel way to identify subgroups for whom asthma interventions may be differentially effective. Overall, this dissertation highlights the need for further consideration of social and environmental context in RCTs. It aims to demonstrate how co-occurring social and environmental covariates can modify treatment efficacy during asthma clinical trials thereby narrowing the efficacy-effectiveness gap. Spanish: Los ensayos controlados aleatorios se consideran el estándar de la evidencia para estimar los efectos causales en las ciencias de la salud, y la evidencia de los ensayos es muy apreciada en la toma de decisiones relacionadas con la salud que impactan a poblaciones enteras. Si bien son rigurosos en su diseño, estos aún pueden tener fallas, particularmente en lo que respecta a su generalización. Esta disertación aprovecha los datos sobre el contexto ambiental y social de los participantes de tres ensayos del grupo AsthmaNet, para abordar las limitaciones de los ensayos controlados aleatorios, centrándose en el asma, una afección notablemente influenciada por la contaminación del aire y los factores estresantes sociales. Específicamente, evalúa la posibilidad de que la eficacia del tratamiento del asma se modifique mediante coexposiciones ambientales y sociales espacialmente heterogéneas. Este trabajo incorpora medidas espaciales derivadas del Sistema de Información Geográfica (GIS) para proporcionar una comprensión integral de la interacción entre estas coexposiciones y los resultados del tratamiento del asma e introduce una forma novedosa de identificar subgrupos para quienes las intervenciones contra el asma pueden ser diferencialmente efectivas. En general, esta disertación destaca la necesidad de una mayor consideración del contexto social y ambiental en los ensayos controlados aleatorios. Su objetivo es demostrar cómo las covariables sociales y ambientales concurrentes pueden modificar la eficacia del tratamiento durante los ensayos clínicos sobre el asma, reduciendo así la brecha eficacia-efectividad.
+CY  - Philadelphia, USA
+DA  - 2024///
+PY  - 2024
+DP  - researchdiscovery.drexel.edu
+SP  - 160
+LA  - eng
+M3  - Dissertation
+ST  - Modification in Responses to Asthma Treatment by Environmental and Social Exposures
+UR  - https://researchdiscovery.drexel.edu/esploro/outputs/doctoral/991021890114104721
+Y2  - 2024/11/20/16:49:10
+L2  - files/1821/991021890114104721.html
 ER  - 
 
