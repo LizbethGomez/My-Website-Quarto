@@ -25,7 +25,7 @@ format:
       - simplex
       
 execute:
-  echo: false
+  echo: True
   message: false
   warning: false
   freeze: auto

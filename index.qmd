@@ -3,7 +3,7 @@ title: "Lizbeth F. Gomez"
 format: 
   html:
     toc: false
-    page-layout: full
+    page-layout: full 
 about:
   template: trestles
   image: files/IMG_1004.jpg
