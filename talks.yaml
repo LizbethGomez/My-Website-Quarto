@@ -1,3 +1,12 @@
+-  title: "American Thoracic Society Conference"
+   description: |
+     Comparative Effectiveness of Asthma Monoclonal Antibody Therapy in Adults: An EHR-based, Propensity-Score-Matched Retrospective Cohort Study.
+   author:
+     - name: Lizbeth F. Gomez 
+   date: '2025-05-20'
+   subtitle: ATS 2025 Conference
+   image: talks/ATS-2025-Talk.png
+   path: files/poster-template_48x36_PAIR-LFG.pdf
 -  title: "Dissertation Defense"
    description: |
      Modification in Responses to Asthma Treatment by Environmental and Social Exposures.
