@@ -14,6 +14,8 @@ about:
       href: https://github.com/LizbethGomez
     - text: Google Scholar 
       href: https://scholar.google.com/citations?user=1ZYXZL0AAAAJ&hl=en
+    - text: bsky
+      href: https://bsky.app/profile/lizbethgomezf.bsky.social
 ---
 
 ```{r}

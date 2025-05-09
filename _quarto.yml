@@ -13,6 +13,7 @@ website:
       - href: about.qmd
       - href: publications.qmd
       - href: talks.qmd
+      
       - href: teaching.qmd
       #  - text: Home
     right: 
