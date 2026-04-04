@@ -20,29 +20,57 @@ website:
     description: "Environmental epidemiologist at UPenn. Research at the intersection of air quality and clinical treatment efficacy in asthma."
 
   sidebar:
-    style: "docked"
-    search: false
-    background: "white"
-    foreground: "dark"
-    contents:
-      - text: "home"
-        href: index.qmd
-      - text: "about"
-        href: about.qmd
-      - section: "work"
-        contents:
-          - text: "research"
-            href: research.qmd
-          - text: "publications"
-            href: publications.qmd
-          - text: "talks"
-            href: talks.qmd
-          - text: "teaching"
-            href: teaching.qmd
-      - text: "writing"
-        href: notes.qmd
-      - text: "cv ↗"
-        href: "files/LFGomez-CV.pdf"
+    - id: en
+      style: "docked"
+      search: false
+      background: "white"
+      foreground: "dark"
+      header: "<div class='lang-toggle'><span class='lang-item lang-en'><a href='#'>en</a></span>&thinsp;·&thinsp;<span class='lang-item lang-es'><a href='#'>es</a></span></div>"
+      contents:
+        - text: "home"
+          href: index.qmd
+        - text: "about"
+          href: about.qmd
+        - section: "work"
+          contents:
+            - text: "research"
+              href: research.qmd
+            - text: "publications"
+              href: publications.qmd
+            - text: "talks"
+              href: talks.qmd
+            - text: "teaching"
+              href: teaching.qmd
+        - text: "writing"
+          href: notes.qmd
+        - text: "cv ↗"
+          href: "files/LFGomez-CV.pdf"
+
+    - id: es
+      style: "docked"
+      search: false
+      background: "white"
+      foreground: "dark"
+      header: "<div class='lang-toggle'><span class='lang-item lang-en'><a href='#'>en</a></span>&thinsp;·&thinsp;<span class='lang-item lang-es'><a href='#'>es</a></span></div>"
+      contents:
+        - text: "inicio"
+          href: es/index.qmd
+        - text: "sobre mí"
+          href: es/about.qmd
+        - section: "trabajo"
+          contents:
+            - text: "investigación"
+              href: es/research.qmd
+            - text: "publicaciones"
+              href: es/publications.qmd
+            - text: "presentaciones"
+              href: es/talks.qmd
+            - text: "clases"
+              href: es/teaching.qmd
+        - text: "escritura"
+          href: es/notes.qmd
+        - text: "cv ↗"
+          href: "files/LFGomez-CV.pdf"
 
   page-footer:
     left: "© 2026 Lizbeth F. Gomez"
@@ -62,6 +90,7 @@ format:
       - cosmo
       - theme.scss
     toc: false
+    include-after-body: lang-toggle.html
 
 execute:
   echo: false

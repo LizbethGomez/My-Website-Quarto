@@ -115,6 +115,29 @@ hr {
   color: #ffffff;
 }
 
+// ── Language toggle ────────────────────────────
+.lang-toggle {
+  padding: 0.9rem 2rem 0.4rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  .lang-item a {
+    color: #aaaaaa;
+    border-bottom: none;
+    transition: color 0.15s;
+    &:hover { color: #0f0f0f; opacity: 1; }
+  }
+
+  // Active / current language
+  .lang-current {
+    font-weight: 600;
+    a, span { color: #0f0f0f; cursor: default; }
+  }
+
+  .lang-sep { color: #cccccc; }
+}
+
 // ── Sidebar ────────────────────────────────────
 #quarto-sidebar {
   border-right: 1px solid #e5e5e5 !important;

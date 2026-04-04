@@ -31,7 +31,7 @@ Rutgers University
 :::
 
 ::: {.home-bio}
-I am an **environmental epidemiologist** working at the intersection of air quality science, climate health, and clinical effectiveness research. My work asks a precise but consequential question: does the environment in which a patient lives affect whether they respond to treatment — and if so, who gets systematically left behind?
+I am an **environmental epidemiologist** working at the intersection of air quality science, climate health, and clinical effectiveness research. My work asks a precise but consequential question: does the environment in which a patient lives affect whether they respond to treatment. And if so, who gets systematically left behind?
 
 At Rutgers, I examine synergistic effects of climate exposures and medication use on health outcomes in vulnerable populations using national Medicaid data. My broader research program studies how ambient air pollution and social stress modify pharmaceutical treatment outcomes in asthma, drawing on clinical trial data, electronic health records, and methods from causal inference and comparative effectiveness research.
 :::
@@ -41,7 +41,7 @@ At Rutgers, I examine synergistic effects of climate exposures and medication us
 :::
 
 ::: {.home-social}
-[Email](mailto:liz.gomez@ifh.rutgers.edu) &nbsp;·&nbsp; [GitHub](https://github.com/LizbethGomez) &nbsp;·&nbsp; [Scholar](https://scholar.google.com/citations?user=1ZYXZL0AAAAJ&hl=en) &nbsp;·&nbsp; [Bluesky](https://bsky.app/profile/lizbethgomezf.bsky.social)
+[Email](mailto:liz.gomez@ifh.rutgers.edu) &nbsp;·&nbsp; [GitHub](https://github.com/LizbethGomez) &nbsp;·&nbsp; [Google Scholar](https://scholar.google.com/citations?user=1ZYXZL0AAAAJ&hl=en) &nbsp;·&nbsp; [Bluesky](https://bsky.app/profile/lizbethgomezf.bsky.social)
 :::
 
 :::

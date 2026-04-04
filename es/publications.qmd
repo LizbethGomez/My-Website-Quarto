@@ -1,0 +1,14 @@
+---
+title: Publicaciones
+format:
+  html:
+    toc: false
+listing:
+  contents: ../publications.yaml
+  sort-ui: false
+  filter-ui: false
+  type: table
+  sort: "date desc"
+  date-format: "YYYY"
+  fields: [title, date, Authors, Journal]
+---

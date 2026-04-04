@@ -1,0 +1,33 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var path = window.location.pathname;
+
+  // Detect language from URL
+  var isES = path.includes('/es/') || /\/es(\/index\.html)?$/.test(path);
+
+  var enEl = document.querySelector('.lang-item.lang-en');
+  var esEl = document.querySelector('.lang-item.lang-es');
+  if (!enEl || !esEl) return;
+
+  var enLink = enEl.querySelector('a');
+  var esLink = esEl.querySelector('a');
+  if (!enLink || !esLink) return;
+
+  if (isES) {
+    // Spanish page — EN link maps to equivalent English page
+    var enPath = path.replace(/\/es\//, '/');
+    enLink.href = enPath;
+    // Mark ES as current
+    esEl.classList.add('lang-current');
+    esLink.removeAttribute('href');
+  } else {
+    // English page — ES link maps to /es/[file]
+    var parts = path.split('/');
+    var file  = parts.pop() || 'index.html';
+    esLink.href = parts.join('/') + '/es/' + file;
+    // Mark EN as current
+    enEl.classList.add('lang-current');
+    enLink.removeAttribute('href');
+  }
+});
+</script>

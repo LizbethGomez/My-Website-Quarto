@@ -1,0 +1,16 @@
+---
+title: "Escritura"
+format:
+  html:
+    toc: false
+listing:
+  contents: ../posts
+  sort: "date desc"
+  type: default
+  fields: [date, title, description, categories]
+  categories: true
+---
+
+Notas sobre investigación, métodos y el trabajo de ser científica. Piezas ocasionales más largas sobre epidemiología ambiental, métodos estadísticos y el proceso de investigación académica.
+
+*Nota: Las entradas están escritas principalmente en inglés.*

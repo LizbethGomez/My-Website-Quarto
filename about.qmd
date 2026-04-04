@@ -12,7 +12,7 @@ execute:
 #| out-width: "200%"
 knitr::include_graphics("files/isee25.JPG")
 knitr::include_graphics("files/cityhall2.jpeg")
-knitr::include_graphics("files/cityhall2.jpeg")
+
 ```
 
 I am a postdoctoral associate at the [Center for Climate, Health and Healthcare](https://climatehealth.rutgers.edu/) at Rutgers University, where I study how climate exposures — extreme heat, wildfire smoke, PM2.5 — interact with medication use to shape health outcomes in vulnerable populations. My work links national Medicaid data with gridded climate data to examine drug-environment interactions with direct policy implications.

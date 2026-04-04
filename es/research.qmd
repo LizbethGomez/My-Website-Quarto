@@ -1,0 +1,66 @@
+---
+title: "Investigación"
+format:
+  html:
+    toc: false
+---
+
+::: {.research-intro}
+Los epidemiólogos ambientales han documentado durante mucho tiempo que la contaminación del aire empeora el asma, y que el cambio climático agrava esos daños. Pero ha surgido una pregunta más sutil: ¿vivir en un entorno contaminado o socialmente desfavorecido también afecta si los tratamientos para el asma *funcionan*?
+
+Mis intereses investigativos se sitúa en la intersección de la ciencia ambiental, la farmacoepidemología y la equidad en salud — preguntando no solo quién se enferma, sino quién se recupera, y por qué eso difiere.
+:::
+
+---
+
+::: {.research-threads}
+
+::: {.research-thread}
+::: {.thread-label}
+Clima × Medicamentos × Poblaciones Vulnerables
+:::
+
+### Interacciones Clima-Medicamentos en Datos de Medicaid
+
+En Rutgers, examino cómo las exposiciones climáticas — el calor extremo, el humo de incendios forestales, el PM₂₅ — interactúan sinérgicamente con el uso de medicamentos para producir resultados adversos en poblaciones vulnerables. Utilizando datos nacionales de Medicaid vinculados con exposiciones climáticas a nivel de código postal, este trabajo genera evidencia del mundo real para informar decisiones clínicas y de política para las poblaciones desproporcionadamente afectadas por el cambio climático.
+:::
+
+::: {.research-thread}
+::: {.thread-label}
+Epidemiología Ambiental × Efectividad Clínica
+:::
+
+### Modificación Ambiental de la Respuesta al Tratamiento
+
+El supuesto estándar en los ensayos clínicos es que los efectos del tratamiento son uniformes en toda la población. Mi trabajo desafía esto al examinar si la contaminación del aire ambiental — PM₂₅, NO₂ y ozono — modifica la eficacia de las terapias farmacológicas para el asma, incluyendo corticosteroides y agentes biológicos.
+
+Aplico métodos de modificación del efecto a datos de ensayos clínicos de referencia en asma (STICS, BARD). La pregunta no es solo si un medicamento funciona en promedio, sino *para quién* funciona — y si el entorno donde vive el paciente forma parte de la respuesta.
+:::
+
+::: {.research-thread}
+::: {.thread-label}
+Determinantes Sociales × Eficacia Farmacológica
+:::
+
+### Estrés Social y Respuesta al Tratamiento
+
+Los factores de estrés social — la desventaja del vecindario, la inestabilidad residencial, la violencia comunitaria — moldean la función inmunológica y las vías inflamatorias que atacan las terapias para el asma. Mi investigación examina si estas exposiciones actúan como modificadores del efecto del tratamiento, alterando las respuestas de los pacientes tanto a los corticosteroides inhalados como a los agentes biológicos.
+
+Esto amplía el enfoque tradicional de la salud ambiental — de "quién se expone" a "quién se beneficia del tratamiento" — una pregunta con implicaciones directas para la equidad en salud en la práctica clínica.
+:::
+
+::: {.research-thread}
+::: {.thread-label}
+Efectividad Comparativa × Evidencia del Mundo Real
+:::
+
+### Efectividad Comparativa con Registros Electrónicos de Salud
+
+Utilizando datos de registros electrónicos de salud de grandes sistemas hospitalarios y métodos de emulación de ensayos objetivo, evalúo la efectividad real del tratamiento para el asma — incluyendo las terapias con anticuerpos monoclonales. Este trabajo examina quién se beneficia, quién está ausente de la base de evidencia, y cómo factores estructurales como el acceso a la atención médica moldean los resultados en la práctica.
+:::
+
+:::
+
+---
+
+Para un registro completo de publicaciones, véase la página de [Publicaciones](publications.qmd).

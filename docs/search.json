@@ -14,7 +14,7 @@
     "href": "index.html",
     "title": "Lizbeth F. Gomez",
     "section": "",
-    "text": "Lizbeth F. Gomez\n\n\n\n\n\n\n\n\nPostdoctoral Associate · Center for Climate, Health and Healthcare Rutgers University\n\n\nI am an environmental epidemiologist working at the intersection of air quality science, climate health, and clinical effectiveness research. My work asks a precise but consequential question: does the environment in which a patient lives affect whether they respond to treatment — and if so, who gets systematically left behind?\nAt Rutgers, I examine synergistic effects of climate exposures and medication use on health outcomes in vulnerable populations using national Medicaid data. My broader research program studies how ambient air pollution and social stress modify pharmaceutical treatment outcomes in asthma, drawing on clinical trial data, electronic health records, and methods from causal inference and comparative effectiveness research.\n\n\nResearch  Publications  CV\n\n\nEmail  ·  GitHub  ·  Scholar  ·  Bluesky\n\n\n\n\nPhD · Environmental Epidemiology Drexel University, 2024\nMPH · Public Health Columbia University, 2020\nBSc · Biology City College of New York, 2018",
+    "text": "Lizbeth F. Gomez\n\n\n\n\n\n\n\n\nPostdoctoral Associate · Center for Climate, Health and Healthcare Rutgers University\n\n\nI am an environmental epidemiologist working at the intersection of air quality science, climate health, and clinical effectiveness research. My work asks a precise but consequential question: does the environment in which a patient lives affect whether they respond to treatment. And if so, who gets systematically left behind?\nAt Rutgers, I examine synergistic effects of climate exposures and medication use on health outcomes in vulnerable populations using national Medicaid data. My broader research program studies how ambient air pollution and social stress modify pharmaceutical treatment outcomes in asthma, drawing on clinical trial data, electronic health records, and methods from causal inference and comparative effectiveness research.\n\n\nResearch  Publications  CV\n\n\nEmail  ·  GitHub  ·  Google Scholar  ·  Bluesky\n\n\n\n\nPhD · Environmental Epidemiology Drexel University, 2024\nMPH · Public Health Columbia University, 2020\nBSc · Biology City College of New York, 2018",
     "crumbs": [
       "home"
     ]
@@ -71,6 +71,80 @@
     "crumbs": [
       "work",
       "research"
+    ]
+  },
+  {
+    "objectID": "es/about.html",
+    "href": "es/about.html",
+    "title": "Sobre Mí",
+    "section": "",
+    "text": "Soy investigadora postdoctoral en el Centro para el Clima, la Salud y la Atención Médica de la Universidad de Rutgers, donde estudio cómo las exposiciones climáticas — el calor extremo, el humo de incendios forestales, el PM₂.₅ — interactúan con el uso de medicamentos para afectar los resultados de salud en poblaciones vulnerables. Mi trabajo vincula datos nacionales de Medicaid con datos climáticos a nivel de código postal para examinar las interacciones entre el entorno y los fármacos, con el objetivo de generar evidencia que informe decisiones clínicas y de política pública.\nAnteriormente fui investigadora postdoctoral en el Departamento de Bioestadística, Epidemiología e Informática de la Facultad de Medicina Perelman de la Universidad de Pensilvania, donde realicé estudios de efectividad comparativa utilizando registros electrónicos de salud del sistema Penn Medicine.\nCompleté mi formación doctoral en la Escuela Dornsife de Salud Pública de la Universidad Drexel en Filadelfia, bajo la tutoría de la Dra. Jane Clougherty. Mi disertación examinó cómo los factores sociales y ambientales modifican la eficacia de los tratamientos farmacológicos para el asma — aportando una perspectiva de ciencias ambientales a preguntas que la investigación clínica ha tratado típicamente de forma aislada.\nAntes de Drexel, obtuve una Maestría en Salud Pública de la Facultad de Salud Pública Mailman de la Universidad de Columbia, y una Licenciatura en Biología del City College de Nueva York.\nMi interés en la salud ambiental y la equidad en salud tomó forma a través de una beca con el Programa de Aprendizaje Servicio IPE de Puerto Rico, donde trabajé con un equipo comunitario en un proyecto de investigación participativa en San Juan. Esa experiencia afianzó mi compromiso con una investigación rigurosa, reproducible y relevante para las comunidades a las que sirve.\n\nFuera de la investigación, generalmente estoy organizando cenas con amigos, cuidando mi jardín, horneando o leyendo ficción.",
+    "crumbs": [
+      "sobre mí"
+    ]
+  },
+  {
+    "objectID": "es/index.html",
+    "href": "es/index.html",
+    "title": "Lizbeth F. Gomez",
+    "section": "",
+    "text": "Lizbeth F. Gomez\n\n\n\n\n\n\n\n\nInvestigadora Postdoctoral · Centro para el Clima, la Salud y la Atención Médica Universidad de Rutgers\n\n\nSoy epidemióloga ambiental especializada en la intersección entre la calidad del aire, la salud climática y la efectividad clínica. Mi investigación aborda una pregunta precisa pero trascendente: ¿el entorno donde vive un paciente afecta si responde al tratamiento? — ¿y si es así, quién queda sistemáticamente rezagado?\nEn Rutgers, examino los efectos sinérgicos de las exposiciones climáticas y el uso de medicamentos sobre los resultados de salud en poblaciones vulnerables, utilizando datos nacionales de Medicaid. Mi programa de investigación también estudia cómo la contaminación del aire y el estrés social modifican los resultados farmacológicos en el asma, a partir de datos de ensayos clínicos, registros electrónicos de salud y métodos de inferencia causal.\n\n\nInvestigación  Publicaciones  CV\n\n\nCorreo  ·  GitHub  ·  Google Scholar  ·  Bluesky\n\n\n\n\nDoctorado · Epidemiología Ambiental Universidad Drexel, 2024\nMaestría en Salud Pública Universidad de Columbia, 2020\nLicenciatura · Biología City College de Nueva York, 2018",
+    "crumbs": [
+      "inicio"
+    ]
+  },
+  {
+    "objectID": "es/notes.html",
+    "href": "es/notes.html",
+    "title": "Escritura",
+    "section": "",
+    "text": "Notas sobre investigación, métodos y el trabajo de ser científica. Piezas ocasionales más largas sobre epidemiología ambiental, métodos estadísticos y el proceso de investigación académica.\nNota: Las entradas están escritas principalmente en inglés.\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "escritura"
+    ]
+  },
+  {
+    "objectID": "es/teaching.html",
+    "href": "es/teaching.html",
+    "title": "Clases",
+    "section": "",
+    "text": "Universidad Drexel · Escuela Dornsife de Salud Pública\n\n\n\nEOH 812\n\n\nCiencias de la Exposición Ambiental\n\n\nInstructora · Primavera 2024\n\n\n\n\nEOH 812\n\n\nCiencias de la Exposición Ambiental\n\n\nAsistente de Enseñanza · Primavera 2023\n\n\n\n\n\nUniversidad de Columbia · Facultad de Salud Pública Mailman\n\n\n\nP8371\n\n\nSIG en Salud Pública\n\n\nAsistente de Enseñanza · Primavera 2020\n\n\n\n\nPUBHG 4200\n\n\nEntorno, Salud y Justicia: Conceptos y Práctica\n\n\nAsistente de Enseñanza y Desarrolladora del Curso · Otoño 2019",
+    "crumbs": [
+      "trabajo",
+      "clases"
+    ]
+  },
+  {
+    "objectID": "es/research.html",
+    "href": "es/research.html",
+    "title": "Investigación",
+    "section": "",
+    "text": "Los epidemiólogos ambientales han documentado durante mucho tiempo que la contaminación del aire empeora el asma, y que el cambio climático agrava esos daños. Pero ha surgido una pregunta más sutil: ¿vivir en un entorno contaminado o socialmente desfavorecido también afecta si los tratamientos para el asma funcionan?\nMi programa de investigación se sitúa en la intersección de la ciencia ambiental, la farmacoepidemología y la equidad en salud — preguntando no solo quién se enferma, sino quién se recupera, y por qué eso difiere.\n\n\n\n\n\nClima × Medicamentos × Poblaciones Vulnerables\n\n\nInteracciones Clima-Medicamentos en Datos de Medicaid\nEn Rutgers, examino cómo las exposiciones climáticas — el calor extremo, el humo de incendios forestales, el PM₂.₅ — interactúan sinérgicamente con el uso de medicamentos para producir resultados adversos en poblaciones vulnerables. Utilizando datos nacionales de Medicaid vinculados con exposiciones climáticas a nivel de código postal, este trabajo genera evidencia del mundo real para informar decisiones clínicas y de política para las poblaciones desproporcionadamente afectadas por el cambio climático.\n\n\n\n\nEpidemiología Ambiental × Efectividad Clínica\n\n\nModificación Ambiental de la Respuesta al Tratamiento\nEl supuesto estándar en los ensayos clínicos es que los efectos del tratamiento son uniformes en toda la población. Mi trabajo desafía esto al examinar si la contaminación del aire ambiental — PM₂.₅, NO₂ y ozono — modifica la eficacia de las terapias farmacológicas para el asma, incluyendo corticosteroides y agentes biológicos.\nAplico métodos de modificación del efecto a datos de ensayos clínicos de referencia en asma (STICS, BARD). La pregunta no es solo si un medicamento funciona en promedio, sino para quién funciona — y si el entorno donde vive el paciente forma parte de la respuesta.\n\n\n\n\nDeterminantes Sociales × Eficacia Farmacológica\n\n\nEstrés Social y Respuesta al Tratamiento\nLos factores de estrés social — la desventaja del vecindario, la inestabilidad residencial, la violencia comunitaria — moldean la función inmunológica y las vías inflamatorias que atacan las terapias para el asma. Mi investigación examina si estas exposiciones actúan como modificadores del efecto del tratamiento, alterando las respuestas de los pacientes tanto a los corticosteroides inhalados como a los agentes biológicos.\nEsto amplía el enfoque tradicional de la salud ambiental — de “quién se expone” a “quién se beneficia del tratamiento” — una pregunta con implicaciones directas para la equidad en salud en la práctica clínica.\n\n\n\n\nEfectividad Comparativa × Evidencia del Mundo Real\n\n\nEfectividad Comparativa con Registros Electrónicos de Salud\nUtilizando datos de registros electrónicos de salud de grandes sistemas hospitalarios y métodos de emulación de ensayos objetivo, evalúo la efectividad real del tratamiento para el asma — incluyendo las terapias con anticuerpos monoclonales. Este trabajo examina quién se beneficia, quién está ausente de la base de evidencia, y cómo factores estructurales como el acceso a la atención médica moldean los resultados en la práctica.\n\n\n\n\nPara un registro completo de publicaciones, véase la página de Publicaciones.",
+    "crumbs": [
+      "trabajo",
+      "investigación"
+    ]
+  },
+  {
+    "objectID": "es/talks.html",
+    "href": "es/talks.html",
+    "title": "Presentaciones",
+    "section": "",
+    "text": "American Thoracic Society Conference\n\n\nATS 2025 Conference\n\n\nComparative Effectiveness of Asthma Monoclonal Antibody Therapy in Adults: An EHR-based, Propensity-Score-Matched Retrospective Cohort Study. San Franciso, CA\n\n\n\n\n\nMay 2025\n\n\n\n\n\n\n\n\n\n\n\n\nDissertation Defense\n\n\nDornsife School of Public Health\n\n\nModification in Responses to Asthma Treatment by Environmental and Social Exposures.\n\n\n\n\n\nJun 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPresentation at University of Washington, Kaufman Lab\n\n\nDissertation Progress Presentation\n\n\nOral presentation for Kaufman Lab.\n\n\n\n\n\nApr 2024\n\n\n\n\n\n\n\n\n\n\n\n\nISEE 2023 Early Monrning Session “Leveraging Clinical Trial Data for Environmental Epidemiology Studies Opportunities and Challenges”\n\n\nISEE 2023 EMS\n\n\nEarly morning session I organized for ISEE 2023, Kaohsiung,Taiwan\n\n\n\n\n\nSep 2023\n\n\n\n\n\n\n\n\n\n\n\n\nSTICS Trial\n\n\nISEE 2021\n\n\nOral presentation for ISEE 2021\n\n\n\n\n\nAug 2021\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "trabajo",
+      "presentaciones"
+    ]
+  },
+  {
+    "objectID": "es/publications.html",
+    "href": "es/publications.html",
+    "title": "Publicaciones",
+    "section": "",
+    "text": "Title\n\n\n\nDate\n\n\n\nAuthors\n\n\n\nJournal\n\n\n\n\n\n\n\n\nImpact of the COVID-19 pandemic on adult asthma-related health care utilization\n\n\n2026\n\n\nGómez LF, Lactaoen KD, Gleeson PK, Schreibman A, Christie JD, Apter AJ, Hubbard RA, et al.\n\n\nJournal of Allergy and Clinical Immunology: Global\n\n\n\n\n\n\nAsthma treatment response modified by fine particulate matter, nitrogen dioxide, and ozone among Black children: A reanalysis of the AsthmaNet Best African American Response to Asthma Drugs trial\n\n\n2025\n\n\nGómez LF, Kinnee EJ, Young MT, Kaufman JD, Fitzpatrick AM, Nyenhuis SM, Solway J, et al.\n\n\nThe Journal of Allergy and Clinical Immunology\n\n\n\n\n\n\nReply\n\n\n2025\n\n\nGómez LF, Kinnee EJ, Holguin F, Clougherty JE\n\n\nJournal of Allergy and Clinical Immunology\n\n\n\n\n\n\nAssociations of Early Life Ambient PM2.5 Exposure With Asthma Risk in a Cohort of Preterm Infants With Bronchopulmonary Dysplasia\n\n\n2025\n\n\nGómez LF, Szeto JJ, Radack JK, Novick‐Goldstein NP, Scott KA, Murosko DC, Gibbs KA, et al.\n\n\nPediatric Pulmonology\n\n\n\n\n\n\nComparative Effectiveness of Asthma Monoclonal Antibody Therapy in Adults: An EHR-based Propensity-Score-Matched Retrospective Cohort Study\n\n\n2025\n\n\nGómez L, Lactaoen K, Schreibman A, Gleeson P, Weissman G\n\n\nAmerican Journal of Respiratory and Critical Care Medicine\n\n\n\n\n\n\nModification of asthma treatment efficacy by healthcare access: A reanalysis of AsthmaNet Step-Up Yellow Zone Inhaled Corticosteroids to Prevent Exacerbations (STICS) clinical trial\n\n\n2024\n\n\nGómez LF, Kinnee E, Kaufman JD, Young MT, Fitzpatrick AM, Phipatanakul W, Mauger DT, et al.\n\n\nRespiratory Medicine\n\n\n\n\n\n\nEstimated Travel Time and Distance to Trial Site: Modifiers of Step-Up Treatment Efficacy in Black Adults with Poorly Controlled Asthma\n\n\n2023\n\n\nGómez L, Kinnee E, Holguin F, Clougherty JE\n\n\nISEE Conference Abstracts\n\n\n\n\n\n\nAbstract MP31: Blood DNA Methylation Signatures of Incident Coronary Heart Disease: An Epigenome-wide Analysis in the Strong Heart Study\n\n\n2020\n\n\nNavas-Acien A, Domingo-Relloso A, Tellez-Plaza M, Gómez L, Herreros M, Devereux RB, Baccarelli A, et al.\n\n\nCirculation\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "trabajo",
+      "publicaciones"
     ]
   }
 ]

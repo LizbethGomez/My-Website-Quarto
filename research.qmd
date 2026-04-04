@@ -8,7 +8,7 @@ format:
 ::: {.research-intro}
 Environmental epidemiologists have long documented that air pollution worsens asthma, and that climate change compounds those harms. But a subtler question has emerged: does living in a polluted or socially disadvantaged environment also affect whether asthma treatments *work*?
 
-My research program sits at the intersection of environmental science, pharmacoepidemiology, and health equity — asking not just who gets sick, but who gets better, and why that differs.
+My research interests sit at the intersection of environmental science, pharmacoepidemiology, and health equity — asking not just who gets sick, but who gets better, and why that differs.
 :::
 
 ---
@@ -22,7 +22,7 @@ Climate × Medication × Vulnerable Populations
 
 ### Climate-Drug Interactions in Medicaid Populations
 
-At Rutgers, I examine how climate exposures — extreme heat, wildfire smoke, PM₂.₅ — interact synergistically with medication use to produce adverse outcomes in vulnerable populations. Using national Medicaid data linked to gridded climate exposures at the ZIP code level, this work generates real-world evidence to inform clinical and policy decisions for populations disproportionately burdened by climate change.
+At Rutgers, I examine how climate exposures — extreme heat, wildfire smoke, PM 2.5 — interact synergistically with medication use to produce adverse outcomes in vulnerable populations. Using national Medicaid data linked to gridded climate exposures at the ZIP code level, this work generates real-world evidence to inform clinical and policy decisions for populations disproportionately burdened by climate change.
 :::
 
 ::: {.research-thread}
@@ -32,7 +32,7 @@ Environmental Epidemiology × Clinical Effectiveness
 
 ### Environmental Modification of Treatment Response
 
-The standard assumption in clinical trials is that treatment effects are uniform across the enrolled population. My work challenges this by testing whether ambient air pollution — PM₂.₅, NO₂, and ozone — modifies the efficacy of pharmacological therapies for asthma, including corticosteroids and biologic agents.
+The standard assumption in clinical trials is that treatment effects are uniform across the enrolled population. My work challenges this by testing whether ambient air pollution — PM₂₅, NO₂, and ozone — modifies the efficacy of pharmacological therapies for asthma, including corticosteroids and biologic agents.
 
 I apply effect modification methods to data from landmark asthma clinical trials (STICS, BARD). The question is not only whether a drug works on average, but *for whom* — and whether the environment a patient lives in is part of that answer.
 :::

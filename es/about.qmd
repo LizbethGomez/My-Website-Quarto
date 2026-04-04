@@ -1,0 +1,20 @@
+---
+title: "Sobre Mí"
+format:
+  html:
+    toc: false
+---
+
+Soy investigadora postdoctoral en el [Centro para el Clima, la Salud y la Atención Médica](https://climatehealth.rutgers.edu/) de la Universidad de Rutgers, donde estudio cómo las exposiciones climáticas — el calor extremo, el humo de incendios forestales, el PM₂₅ — interactúan con el uso de medicamentos para afectar los resultados de salud en poblaciones vulnerables. Mi trabajo vincula datos nacionales de Medicaid con datos climáticos a nivel de código postal para examinar las interacciones entre el entorno y los fármacos, con el objetivo de generar evidencia que informe decisiones clínicas y de política pública.
+
+Anteriormente fui investigadora postdoctoral en el Departamento de Bioestadística, Epidemiología e Informática de la Facultad de Medicina Perelman de la Universidad de Pensilvania, donde realicé estudios de efectividad comparativa utilizando registros electrónicos de salud del sistema Penn Medicine.
+
+Completé mi formación doctoral en la [Escuela Dornsife de Salud Pública](https://drexel.edu/dornsife/academics/departments/environmental-occupational-health/) de la Universidad Drexel en Filadelfia, bajo la tutoría de la Dra. Jane Clougherty. Mi disertación examinó cómo los factores sociales y ambientales modifican la eficacia de los tratamientos farmacológicos para el asma — aportando una perspectiva de ciencias ambientales a preguntas que la investigación clínica ha tratado típicamente de forma aislada.
+
+Antes de Drexel, obtuve una Maestría en Salud Pública de la [Facultad de Salud Pública Mailman de la Universidad de Columbia](https://www.publichealth.columbia.edu/academics/departments/environmental-health-sciences-ehs), y una Licenciatura en Biología del [City College de Nueva York](https://www.ccny.cuny.edu/).
+
+Mi interés en la salud ambiental y la equidad en salud tomó forma a través de una beca con el Programa de Aprendizaje Servicio IPE de Puerto Rico, donde trabajé con un equipo comunitario en un proyecto de investigación participativa en San Juan. Esa experiencia afianzó mi compromiso con una investigación rigurosa, reproducible y relevante para las comunidades a las que sirve.
+
+---
+
+Fuera de la investigación, generalmente estoy organizando cenas con amigos, cuidando mi jardín, horneando o leyendo ficción.

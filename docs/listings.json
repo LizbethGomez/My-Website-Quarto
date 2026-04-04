@@ -10,5 +10,17 @@
   {
     "listing": "/notes.html",
     "items": []
+  },
+  {
+    "listing": "/es/notes.html",
+    "items": []
+  },
+  {
+    "listing": "/es/talks.html",
+    "items": []
+  },
+  {
+    "listing": "/es/publications.html",
+    "items": []
   }
 ]

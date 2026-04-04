@@ -1,0 +1,66 @@
+---
+title: "Clases"
+format:
+  html:
+    toc: false
+---
+
+::: {.teaching-block}
+::: {.institution-label}
+Universidad Drexel · Escuela Dornsife de Salud Pública
+:::
+
+::: {.course-entry}
+::: {.course-code}
+EOH 812
+:::
+::: {.course-title}
+Ciencias de la Exposición Ambiental
+:::
+::: {.course-role}
+Instructora · Primavera 2024
+:::
+:::
+
+::: {.course-entry}
+::: {.course-code}
+EOH 812
+:::
+::: {.course-title}
+Ciencias de la Exposición Ambiental
+:::
+::: {.course-role}
+Asistente de Enseñanza · Primavera 2023
+:::
+:::
+:::
+
+::: {.teaching-block}
+::: {.institution-label}
+Universidad de Columbia · Facultad de Salud Pública Mailman
+:::
+
+::: {.course-entry}
+::: {.course-code}
+P8371
+:::
+::: {.course-title}
+SIG en Salud Pública
+:::
+::: {.course-role}
+Asistente de Enseñanza · Primavera 2020
+:::
+:::
+
+::: {.course-entry}
+::: {.course-code}
+PUBHG 4200
+:::
+::: {.course-title}
+Entorno, Salud y Justicia: Conceptos y Práctica
+:::
+::: {.course-role}
+Asistente de Enseñanza y Desarrolladora del Curso · Otoño 2019
+:::
+:::
+:::

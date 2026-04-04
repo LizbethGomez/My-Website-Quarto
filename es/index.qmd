@@ -1,0 +1,61 @@
+---
+title: ""
+format:
+  html:
+    toc: false
+---
+
+::: {.home-wrapper}
+
+::: {.home-hero}
+::: {.hero-name}
+Lizbeth F. Gomez
+:::
+::: {.hero-img}
+![](../files/image1.png)
+:::
+:::
+
+::: {.home-body}
+
+::: {.home-col-left}
+
+::: {.home-position}
+Investigadora Postdoctoral · Centro para el Clima, la Salud y la Atención Médica
+Universidad de Rutgers
+:::
+
+::: {.home-bio}
+Soy **epidemióloga ambiental** especializada en la intersección entre la calidad del aire, la salud climática y la efectividad clínica. Mi investigación aborda una pregunta precisa pero trascendente: ¿el entorno donde vive un paciente afecta si responde al tratamiento? — ¿y si es así, quién queda sistemáticamente rezagado?
+
+En Rutgers, examino los efectos sinérgicos de las exposiciones climáticas y el uso de medicamentos sobre los resultados de salud en poblaciones vulnerables, utilizando datos nacionales de Medicaid. Mi programa de investigación también estudia cómo la contaminación del aire y el estrés social modifican los resultados farmacológicos en el asma, a partir de datos de ensayos clínicos, registros electrónicos de salud y métodos de inferencia causal.
+:::
+
+::: {.home-page-links}
+[Investigación](research.qmd) &ensp;[Publicaciones](publications.qmd) &ensp;[CV](../files/LFGomez-CV.pdf){target="_blank"}
+:::
+
+::: {.home-social}
+[Correo](mailto:liz.gomez@ifh.rutgers.edu) &nbsp;·&nbsp; [GitHub](https://github.com/LizbethGomez) &nbsp;·&nbsp; [Google Scholar](https://scholar.google.com/citations?user=1ZYXZL0AAAAJ&hl=en) &nbsp;·&nbsp; [Bluesky](https://bsky.app/profile/lizbethgomezf.bsky.social)
+:::
+
+:::
+
+::: {.home-col-right}
+
+::: {.home-edu}
+**Doctorado** · Epidemiología Ambiental
+Universidad Drexel, 2024
+
+**Maestría en Salud Pública**
+Universidad de Columbia, 2020
+
+**Licenciatura** · Biología
+City College de Nueva York, 2018
+:::
+
+:::
+
+:::
+
+:::
