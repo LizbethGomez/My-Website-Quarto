@@ -7,7 +7,8 @@
       "Bash(quarto --version)",
       "WebFetch(domain:abstractxan.xyz)",
       "Bash(pdftotext \"/Users/penn-liz/Documents/Portfolio/Curriculum Vitae/LFGomez-CV1-26.pdf\" -)",
-      "Bash(python3 -c \":*)"
+      "Bash(python3 -c \":*)",
+      "WebFetch(domain:www.lizbethgomezf.com)"
     ]
   }
 }

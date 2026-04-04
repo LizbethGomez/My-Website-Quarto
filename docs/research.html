@@ -259,8 +259,10 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
 document.addEventListener('DOMContentLoaded', function () {
   var path = window.location.pathname;
 
-  // Detect language from URL
-  var isES = path.includes('/es/') || /\/es(\/index\.html)?$/.test(path);
+  // Primary: check <html lang="..."> (set by Quarto when lang: es is in metadata)
+  // Fallback: check if /es/ appears in the URL path
+  var lang = (document.documentElement.lang || '').toLowerCase();
+  var isES = lang.startsWith('es') || path.indexOf('/es/') !== -1;
 
   var enEl = document.querySelector('.lang-item.lang-en');
   var esEl = document.querySelector('.lang-item.lang-es');
@@ -270,19 +272,15 @@ document.addEventListener('DOMContentLoaded', function () {
   var esLink = esEl.querySelector('a');
   if (!enLink || !esLink) return;
 
+  // Relative URLs — work at any base path or subdirectory
+  var fileName = path.split('/').pop() || 'index.html';
+
   if (isES) {
-    // Spanish page — EN link maps to equivalent English page
-    var enPath = path.replace(/\/es\//, '/');
-    enLink.href = enPath;
-    // Mark ES as current
+    enLink.href = '../' + fileName;
     esEl.classList.add('lang-current');
     esLink.removeAttribute('href');
   } else {
-    // English page — ES link maps to /es/[file]
-    var parts = path.split('/');
-    var file  = parts.pop() || 'index.html';
-    esLink.href = parts.join('/') + '/es/' + file;
-    // Mark EN as current
+    esLink.href = 'es/' + fileName;
     enEl.classList.add('lang-current');
     enLink.removeAttribute('href');
   }
