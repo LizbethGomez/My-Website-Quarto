@@ -1,48 +1,48 @@
-- title: "Abstract MP31: Blood DNA Methylation Signatures of Incident Coronary Heart Disease: An Epigenome-wide Analysis in the Strong Heart Study"
-  Authors: "Navas-Acien, Domingo-Relloso, Tellez-Plaza, Gomez, Herreros, Devereux, Baccarelli, Umans, Howard, Zhao A, A, M, L, M, RB, A, JG, B, J"
-  date: 2020-01-01
-  path: https://doi.org/https://doi.org/10.1161/circ.141.suppl_1.MP31
-  Journal: "Circulation"
-  PDF: 
-- title: "Common DNA methylation signatures of arsenic exposure and incident cardiovascular disease in the Strong Heart Study"
-  Authors: "Domingo-Relloso, Tellez-Plaza, Bozack, Gomez, Herreros, Devereux, Baccarelli, Umans, Howard, Zhao A, M, A, L, M, R, A, J, B, J"
-  date: 2020-01-01
-  path: https://doi.org/https://doi.org/10.1289/isee.2020.virtual.O-OS-130
-  Journal: "ISEE Conference Abstracts"
-  PDF: 
-- title: "Modification of Asthma Clinical Trial Treatment Efficacy by Social and Environmental Exposures"
-  Authors: "Gomez, Kinnee, Kaufman, Holguin, Young, Clougherty L, E, JD, F, MT, JE"
-  date: 2021-01-01
-  path: https://doi.org/https://doi.org/10.1289/isee.2021.O-TO-084
-  Journal: "ISEE Conference Abstracts"
-  PDF: 
-- title: "Blood DNA methylation and incident coronary heart disease: evidence from the strong heart study"
-  Authors: "Navas-Acien, Domingo-Relloso, Subedi, Riffo-Campos, Xia, Gomez, Haack, Goldsmith, Howard, Best A, A, P, AL, R, L, K, J, BV, LG"
-  date: 2021-01-01
-  path: https://doi.org/https://jamanetwork.com/journals/jamacardiology/fullarticle/2782550
-  Journal: "JAMA cardiology"
-  PDF: 
-- title: "PM2. 5 and NO2 as Potential Modifiers of Clinical Trial Results on Asthma Exacerbation and Control"
-  Authors: "Gomez, Kinnee, Kaufman, Mauger, Holguin, Clougherty L, EJ, JD, DT, F, JE"
-  date: 2022-01-01
-  path: https://doi.org/https://doi.org/10.1289/isee.2022.P-1238
-  Journal: "ISEE Conference Abstracts"
-  PDF: 
-- title: "Estimated Travel Time and Distance to Trial Site: Modifiers of Step-Up Treatment Efficacy in Black Adults with Poorly Controlled Asthma"
-  Authors: "Gomez, Kinnee, Holguin, Clougherty L, E, F, JE"
-  date: 2023-01-01
-  path: https://doi.org/https://doi.org/10.1289/isee.2023.MP-097
-  Journal: "ISEE Conference Abstracts"
-  PDF: 
+- title: "Impact of the COVID-19 pandemic on adult asthma-related health care utilization"
+  Authors: "**Gómez** LF, Lactaoen KD, Gleeson PK, Schreibman A, Christie JD, Apter AJ, Hubbard RA, et al."
+  Journal: "Journal of Allergy and Clinical Immunology: Global"
+  date: 2026-01-01
+  path: https://doi.org/10.1016/j.jacig.2026.100675
+
+- title: "Asthma treatment response modified by fine particulate matter, nitrogen dioxide, and ozone among Black children: A reanalysis of the AsthmaNet Best African American Response to Asthma Drugs trial"
+  Authors: "**Gómez** LF, Kinnee EJ, Young MT, Kaufman JD, Fitzpatrick AM, Nyenhuis SM, Solway J, et al."
+  Journal: "The Journal of Allergy and Clinical Immunology"
+  date: 2025-01-01
+  path: https://doi.org/10.1016/j.jaci.2025.04.009
+
+- title: "Reply"
+  Authors: "**Gómez** LF, Kinnee EJ, Holguin F, Clougherty JE"
+  Journal: "Journal of Allergy and Clinical Immunology"
+  date: 2025-01-01
+  path: https://doi.org/10.1016/j.jaci.2025.08.010
+
+- title: "Associations of Early Life Ambient PM<sub>2.5</sub> Exposure With Asthma Risk in a Cohort of Preterm Infants With Bronchopulmonary Dysplasia"
+  Authors: "**Gómez** LF, Szeto JJ, Radack JK, Novick‐Goldstein NP, Scott KA, Murosko DC, Gibbs KA, et al."
+  Journal: "Pediatric Pulmonology"
+  date: 2025-01-01
+  path: https://doi.org/10.1002/ppul.71432
+
+- title: "Comparative Effectiveness of Asthma Monoclonal Antibody Therapy in Adults: An EHR-based Propensity-Score-Matched Retrospective Cohort Study"
+  Authors: "**Gómez** L, Lactaoen K, Schreibman A, Gleeson P, Weissman G"
+  Journal: "American Journal of Respiratory and Critical Care Medicine"
+  date: 2025-01-01
+  path: https://doi.org/10.1164/ajrccm.2025.211.Abstracts.A5558
+
 - title: "Modification of asthma treatment efficacy by healthcare access: A reanalysis of AsthmaNet Step-Up Yellow Zone Inhaled Corticosteroids to Prevent Exacerbations (STICS) clinical trial"
-  Authors: "Gómez, Kinnee, Kaufman, Young, Fitzpatrick, Phipatanakul, Mauger, McClure, Bilal, Holguin, Clougherty LF, E, JD, MT, AM, W, DT, LA, U, F, JE"
+  Authors: "**Gómez** LF, Kinnee E, Kaufman JD, Young MT, Fitzpatrick AM, Phipatanakul W, Mauger DT, et al."
+  Journal: "Respiratory Medicine"
   date: 2024-01-01
   path: https://doi.org/10.1016/j.rmed.2024.107853
-  Journal: "Respiratory Medicine"
-  PDF: 
-- title: "Modification in Responses to Asthma Treatment by Environmental and Social Exposures: A Secondary Analysis of AsthmaNet Clinical Trials"
-  Authors: "**Gomez L**"
-  date: 2024-01-01
-  path: 
-  Journal: "NA"
-  PDF: 
+
+- title: "Estimated Travel Time and Distance to Trial Site: Modifiers of Step-Up Treatment Efficacy in Black Adults with Poorly Controlled Asthma"
+  Authors: "**Gómez** L, Kinnee E, Holguin F, Clougherty JE"
+  Journal: "ISEE Conference Abstracts"
+  date: 2023-01-01
+  path: https://doi.org/10.1289/isee.2023.MP-097
+
+- title: "Abstract MP31: Blood DNA Methylation Signatures of Incident Coronary Heart Disease: An Epigenome-wide Analysis in the Strong Heart Study"
+  Authors: "Navas-Acien A, Domingo-Relloso A, Tellez-Plaza M, **Gómez** L, Herreros M, Devereux RB, Baccarelli A, et al."
+  Journal: "Circulation"
+  date: 2020-01-01
+  path: https://doi.org/10.1161/circ.141.suppl_1.MP31
+

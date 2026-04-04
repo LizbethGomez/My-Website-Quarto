@@ -1,35 +1,66 @@
 ---
-title: "Lizbeth F. Gomez"
-format: 
+title: ""
+format:
   html:
     toc: false
-    page-layout: full 
-about:
-  template: trestles
-  image: files/IMG_1004.jpg
-  links:
-    - icon: envelope
-      href: mailto:lizbeth.gomez@pennmedicine.upenn.edu
-    - icon: github
-      href: https://github.com/LizbethGomez
-    - text: Google Scholar 
-      href: https://scholar.google.com/citations?user=1ZYXZL0AAAAJ&hl=en
-    - text: bsky
-      href: https://bsky.app/profile/lizbethgomezf.bsky.social
 ---
 
 ```{r}
 #| output: false
-file.copy("files/Lizbeth Gomez_7.20.24_CV.pdf", "docs/files/Lizbeth Gomez_7.20.24_CV.pdf", overwrite = TRUE)
+file.copy("files/LFGomez-CV.pdf", "docs/files/LFGomez-CV.pdf", overwrite = TRUE)
 ```
 
-I am a postdoctoral fellow in the Department of Biostatistics, Epidemiology and Informatics at the Perelman School of Medicine at UPenn. I am an environmental epidemiologist with expertise in the role of ambient air pollution and social stress on clinical treatment efficacy among susceptible populations.
+::: {.home-wrapper}
 
-### Education
+::: {.home-hero}
+::: {.hero-name}
+Lizbeth F. Gomez
+:::
+::: {.hero-img}
+![](files/image1.png)
+:::
+:::
 
--   **PhD**, Environmental and Occupational Health
-    -   Drexel University
--   **MPH**, Environmental Health Sciences
-    -   Columbia University
--   **BSc**, Biology / Chemistry
-    -   CUNY City College of New York
+::: {.home-body}
+
+::: {.home-col-left}
+
+::: {.home-position}
+Postdoctoral Associate · Center for Climate, Health and Healthcare
+Rutgers University
+:::
+
+::: {.home-bio}
+I am an **environmental epidemiologist** working at the intersection of air quality science, climate health, and clinical effectiveness research. My work asks a precise but consequential question: does the environment in which a patient lives affect whether they respond to treatment — and if so, who gets systematically left behind?
+
+At Rutgers, I examine synergistic effects of climate exposures and medication use on health outcomes in vulnerable populations using national Medicaid data. My broader research program studies how ambient air pollution and social stress modify pharmaceutical treatment outcomes in asthma, drawing on clinical trial data, electronic health records, and methods from causal inference and comparative effectiveness research.
+:::
+
+::: {.home-page-links}
+[Research](/research.qmd) &ensp;[Publications](/publications.qmd) &ensp;[CV](/files/LFGomez-CV.pdf){target="_blank"}
+:::
+
+::: {.home-social}
+[Email](mailto:liz.gomez@ifh.rutgers.edu) &nbsp;·&nbsp; [GitHub](https://github.com/LizbethGomez) &nbsp;·&nbsp; [Scholar](https://scholar.google.com/citations?user=1ZYXZL0AAAAJ&hl=en) &nbsp;·&nbsp; [Bluesky](https://bsky.app/profile/lizbethgomezf.bsky.social)
+:::
+
+:::
+
+::: {.home-col-right}
+
+::: {.home-edu}
+**PhD** · Environmental Epidemiology
+Drexel University, 2024
+
+**MPH** · Public Health
+Columbia University, 2020
+
+**BSc** · Biology
+City College of New York, 2018
+:::
+
+:::
+
+:::
+
+:::

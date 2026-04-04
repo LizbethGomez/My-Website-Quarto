@@ -3,7 +3,6 @@ title: Talks
 format:
   html:
     toc: false
-    page-layout: full
 listing:
   contents: talks.yaml
   sort-ui: false
@@ -12,6 +11,3 @@ listing:
   date-format: "MMM YYYY"
   fields: [title, subtitle, date, description, image]
 ---
-
-
-

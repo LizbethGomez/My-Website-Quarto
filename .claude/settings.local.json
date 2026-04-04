@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(yml|yaml|json|md|css|scss\\)$\")",
+      "Bash(xargs ls:*)",
+      "Bash(/Applications/RStudio.app/Contents/Resources/app/quarto/bin/quarto --version)",
+      "Bash(quarto --version)",
+      "WebFetch(domain:abstractxan.xyz)",
+      "Bash(pdftotext \"/Users/penn-liz/Documents/Portfolio/Curriculum Vitae/LFGomez-CV1-26.pdf\" -)",
+      "Bash(python3 -c \":*)"
+    ]
+  }
+}

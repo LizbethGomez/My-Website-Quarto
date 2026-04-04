@@ -3,7 +3,6 @@ title: Publications
 format:
   html:
     toc: false
-    page-layout: full
 listing:
   contents: publications.yaml
   sort-ui: false
@@ -11,78 +10,101 @@ listing:
   type: table
   sort: "date desc"
   date-format: "YYYY"
-  fields: [title, date, Authors, Journal, PDF]
+  fields: [title, date, Authors, Journal]
 ---
 
 ```{r}
+#| output: false
 library(tidyverse)
-library(stringr)
 
-# Safely extract data with fallbacks to NA
-extract_field <- function(data, field, default = NA_character_) {
-  map_chr(data, ~pluck(.x, field, .default = default))
+# ── Parse RIS file ──────────────────────────────────────────────────────────
+ris_lines <- read_lines("files/Exported Items.ris")
+
+records <- list()
+current <- list(authors = character())
+
+for (line in ris_lines) {
+  if (nchar(trimws(line)) == 0) next
+  if (nchar(line) < 6) next
+
+  tag   <- substr(line, 1, 2)
+  value <- trimws(substr(line, 7, nchar(line)))
+
+  if (startsWith(line, "ER  -")) {
+    if (!is.null(current$title)) records <- append(records, list(current))
+    current <- list(authors = character())
+  } else if (tag == "TY") current$type    <- value
+  else if (tag == "TI")   current$title   <- value
+  else if (tag == "T2")   current$journal <- value
+  else if (tag == "PY")   current$year    <- value
+  else if (tag == "DO")   current$doi     <- value
+  else if (tag == "AU")   current$authors <- c(current$authors, value)
 }
 
-# Load and parse publication data
-all_pubs <- tryCatch({
-  rmarkdown::pandoc_citeproc_convert("files/Exported Items.ris", type = "list")
-}, error = function(e) {
-  stop("Failed to read the .ris file. Please check for formatting issues.")
+# ── Format a single author: "Lastname, Firstname M" → "Lastname FM" ─────────
+fmt_author <- function(au) {
+  parts    <- str_split(au, ",", n = 2)[[1]]
+  family   <- trimws(parts[1])
+  given    <- if (length(parts) > 1) trimws(parts[2]) else ""
+  initials <- str_extract_all(given, "(?:^|(?<=\\s))[A-ZÁÉÍÓÚÑ]")[[1]] |>
+    str_c(collapse = "")
+  if (nchar(initials) == 0) family else str_c(family, " ", initials)
+}
+
+fmt_authors <- function(aus) {
+  formatted <- map_chr(aus, fmt_author)
+  # Bold the PI's name (handle accent variant)
+  formatted <- str_replace(formatted, "^G[oó]mez\\b", "**Gómez**")
+  # Truncate long lists
+  if (length(formatted) > 7) formatted <- c(formatted[1:7], "et al.")
+  str_c(formatted, collapse = ", ")
+}
+
+# ── Build tidy data frame — keep only YOUR papers ────────────────────────────
+is_my_paper <- function(r) {
+  any(str_detect(r$authors, regex("G[oó]mez", ignore_case = TRUE)))
+}
+
+pubs <- map(records, function(r) {
+  # Skip dissertations and papers you're not on
+  if (!is.null(r$type) && r$type == "MANSCPT") return(NULL)
+  if (!is_my_paper(r)) return(NULL)
+
+  # Clean DOI
+  doi_clean <- if (!is.null(r$doi)) {
+    r$doi |>
+      str_remove("^https?://doi\\.org/") |>
+      str_remove("^https?://")
+  } else NA_character_
+
+  path <- if (!is.na(doi_clean) && nchar(doi_clean) > 0 && !startsWith(doi_clean, "http")) {
+    str_c("https://doi.org/", doi_clean)
+  } else if (!is.na(doi_clean) && startsWith(doi_clean, "http")) {
+    doi_clean
+  } else ""
+
+  tibble(
+    title   = r$title   %||% "",
+    Authors = fmt_authors(r$authors),
+    Journal = r$journal %||% "",
+    date    = if (!is.null(r$year)) str_c(r$year, "-01-01") else "1900-01-01",
+    path    = path
+  )
+}) |> compact() |> list_rbind() |> arrange(desc(date))
+
+# ── Write YAML (use paste0 to guarantee indentation) ─────────────────────────
+yaml_entries <- pubs |> pmap_chr(function(title, Authors, Journal, date, path) {
+  title_esc <- str_replace_all(title, '"', '\\"')
+  auth_esc  <- str_replace_all(Authors, '"', '\\"')
+  journ_esc <- str_replace_all(Journal, '"', '\\"')
+  paste0(
+    '- title: "',   title_esc, '"\n',
+    '  Authors: "', auth_esc,  '"\n',
+    '  Journal: "', journ_esc, '"\n',
+    '  date: ',     date,      '\n',
+    '  path: ',     path,      '\n'
+  )
 })
 
-# Extract relevant fields with safe fallbacks
-ids <- extract_field(all_pubs, "id")
-local_files <- file.path("publications", paste0(ids, ".pdf"))
-files <- ifelse(file.exists(local_files), local_files, NA_character_)
-
-dois <- extract_field(all_pubs, "DOI")
-journals <- extract_field(all_pubs, "container-title")
-titles <- extract_field(all_pubs, "title")
-years <- map_dbl(all_pubs, ~pluck(.x, "issued", "date-parts", 1, 1, .default = NA_real_))
-authors <- map(all_pubs, ~pluck(.x, "author", .default = list()))
-
-# Extract author family names and initials safely
-safe_family <- function(x) ifelse(is.null(pluck(x, "family")), NA_character_, pluck(x, "family"))
-safe_given <- function(x) ifelse(is.null(pluck(x, "given")), NA_character_, str_extract_all(pluck(x, "given"), "[A-Z]"))
-
-family_names <- map(authors, ~map_chr(.x, safe_family))
-first_initials <- map(authors, ~map_chr(.x, ~str_c(map_chr(safe_given(.x), str_c, collapse = ""), collapse = "")))
-
-# Handle cases where author lists might be empty
-family_names <- map_chr(family_names, ~ifelse(length(.x) == 0, "NA", str_c(.x, collapse = ", ")))
-first_initials <- map_chr(first_initials, ~ifelse(length(.x) == 0, "NA", str_c(.x, collapse = ", ")))
-
-# Create the final publications tibble
-pubs <- tibble(
-  doi = dois,
-  journal = journals,
-  title = titles,
-  year = years,
-  authors = str_c(family_names, " ", first_initials),
-  pdf = files
-) %>%
-  mutate(
-    authors = str_replace_all(authors, "Gomez L,", "**Gomez L,**"),
-    authors = str_replace_all(authors, "Gomez L$", "**Gomez L**"),
-    authors = str_replace_all(authors, "Gomez LH", "**Gomez LF**"),
-    pdf = ifelse(is.na(pdf), "", str_glue('
-    |
-        <a href="{pdf}">
-        <i class="bi bi-file-earmark-pdf-fill"></i>
-        </a>
-    ')),
-    path = ifelse(is.na(doi), "", str_glue("https://doi.org/{doi}")),
-    date = ifelse(is.na(year), "unknown", str_glue("{year}-01-01")),
-    text = str_glue('
-    - title: "{title}"
-      Authors: "{authors}"
-      date: {date}
-      path: {path}
-      Journal: "{journal}"
-      PDF: {pdf}
-    ')
-  )
-
-# Write formatted output to publications.yaml
-write_lines(c(pubs$text), "publications.yaml")
+write_lines(yaml_entries, "publications.yaml")
 ```

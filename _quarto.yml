@@ -2,32 +2,69 @@ project:
   type: website
   output-dir: docs
   resources:
-  - "files/Lizbeth Gomez_7.20.24_CV.pdf"
+  - "files/LFGomez-CV.pdf"
+
 website:
   title: "Lizbeth F. Gomez"
+  description: "Environmental epidemiologist and postdoctoral associate at Rutgers University, studying how air pollution, climate, and social stress shape clinical treatment outcomes in asthma."
   google-analytics: "G-8FWX65NBJQ"
-  site-url: "http://www.lizbethgomezf.com"
-  navbar:
+  site-url: "https://www.lizbethgomezf.com"
+
+  open-graph:
+    site-name: "Lizbeth F. Gomez"
+    description: "Environmental epidemiologist at UPenn. Research at the intersection of air quality and clinical treatment efficacy in asthma."
+    image: "files/IMG_1004.jpg"
+
+  twitter-card:
+    card-style: summary
+    description: "Environmental epidemiologist at UPenn. Research at the intersection of air quality and clinical treatment efficacy in asthma."
+
+  sidebar:
+    style: "docked"
     search: false
-    left:
-      - href: about.qmd
-      - href: publications.qmd
-      - href: talks.qmd
-      
-      - href: teaching.qmd
-      #  - text: Home
-    right: 
-      - text: CV
-        href: files/Lizbeth Gomez_7.20.24_CV.pdf
-    open-graph: true
+    background: "white"
+    foreground: "dark"
+    contents:
+      - text: "home"
+        href: index.qmd
+      - text: "about"
+        href: about.qmd
+      - section: "work"
+        contents:
+          - text: "research"
+            href: research.qmd
+          - text: "publications"
+            href: publications.qmd
+          - text: "talks"
+            href: talks.qmd
+          - text: "teaching"
+            href: teaching.qmd
+      - text: "writing"
+        href: notes.qmd
+      - text: "cv ↗"
+        href: "files/LFGomez-CV.pdf"
+
+  page-footer:
+    left: "© 2026 Lizbeth F. Gomez"
+    right:
+      - text: "email"
+        href: "mailto:liz.gomez@ifh.rutgers.edu"
+      - text: "github"
+        href: "https://github.com/LizbethGomez"
+      - text: "Google Scholar"
+        href: "https://scholar.google.com/citations?user=1ZYXZL0AAAAJ&hl=en"
+      - text: "bluesky"
+        href: "https://bsky.app/profile/lizbethgomezf.bsky.social"
+
 format:
   html:
     theme:
-      - simplex
-      
+      - cosmo
+      - theme.scss
+    toc: false
+
 execute:
-  echo: false 
+  echo: false
   message: false
   warning: false
   freeze: auto
-

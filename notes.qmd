@@ -1,0 +1,14 @@
+---
+title: "Writing"
+format:
+  html:
+    toc: false
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  fields: [date, title, description, categories]
+  categories: true
+---
+
+Notes on research, methods, and the work of being a scientist. Occasional longer pieces on environmental epidemiology, statistical methods, and the academic research process.

@@ -1,17 +1,30 @@
 ---
 title: "About"
-execute: 
+format:
+  html:
+    toc: false
+execute:
   echo: false
 ---
 
 ```{r}
-#| fig.cap: "Graduation Shoot @ City Hall"
 #| column: margin
+#| out-width: "200%"
+knitr::include_graphics("files/isee25.JPG")
+knitr::include_graphics("files/cityhall2.jpeg")
 knitr::include_graphics("files/cityhall2.jpeg")
 ```
 
-I am currently a postdoctoral fellow at University of Pennsylvania. I completed my doctoral degree at Drexel University's [Dornsife School of Public Health](https://drexel.edu/dornsife/academics/departments/environmental-occupational-health/eoh-student-profiles/) in Philadelphia. Under the guidance of Dr. Jane Clougherty, my research focused on evaluating how social and environmental factors impact the efficacy of pharmaceutical treatments. Prior to this, I earned a Master's in Public Health with a concentration in Environmental Health Science from [Mailman School of Public Health](https://www.publichealth.columbia.edu/academics/departments/environmental-health-sciences-ehs) and a Bachelor's of Science from the [City College of New York](https://www.ccny.cuny.edu/).
+I am a postdoctoral associate at the [Center for Climate, Health and Healthcare](https://climatehealth.rutgers.edu/) at Rutgers University, where I study how climate exposures — extreme heat, wildfire smoke, PM2.5 — interact with medication use to shape health outcomes in vulnerable populations. My work links national Medicaid data with gridded climate data to examine drug-environment interactions with direct policy implications.
 
-My research interests are centered around epidemiological and biostatistics methodologies, with a particular focus on disparities in asthma outcomes. These interests originated from my work as a fellow in the Puerto Rico IPE Service Learning Fellowship where I collaborated with a diverse team to develop a community-based participatory and service learning research project in San Juan. Since then, my passion for producing rigorous and reproducible research has continued to grow.
+Previously, I was a postdoctoral researcher in the Department of Biostatistics, Epidemiology and Informatics at the Perelman School of Medicine, University of Pennsylvania, where I conducted comparative effectiveness studies using electronic health records from Penn Medicine.
 
-When I'm not engaged in research, I enjoy being a foodie, hosting friends at home, gardening, baking, reading (mostly fiction these days), and tinkering with R stuff.
+I completed my doctoral training at Drexel University's [Dornsife School of Public Health](https://drexel.edu/dornsife/academics/departments/environmental-occupational-health/) in Philadelphia, under the mentorship of Dr. Jane Clougherty. My dissertation examined how social and environmental factors modify the efficacy of pharmaceutical treatments for asthma — bringing an environmental science lens to questions that clinical research has typically treated in isolation.
+
+Prior to Drexel, I earned a Master of Public Health from [Columbia University Mailman School of Public Health](https://www.publichealth.columbia.edu/academics/departments/environmental-health-sciences-ehs), and a Bachelor of Science in Biology from the [City College of New York](https://www.ccny.cuny.edu/).
+
+My interest in environmental health and health equity took shape through a fellowship with the Puerto Rico IPE Service Learning Program, where I worked with a community team on a participatory research project in San Juan. That experience grounded my commitment to research that is rigorous, reproducible, and relevant to the communities it aims to serve.
+
+---
+
+Outside of research, I am usually hosting friends for dinner, tending to my garden, baking, or reading fiction.

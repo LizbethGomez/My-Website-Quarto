@@ -1,21 +1,66 @@
 ---
 title: "Teaching"
-execute: 
-  echo: false
+format:
+  html:
+    toc: false
 ---
 
-### Drexel University
+::: {.teaching-block}
+::: {.institution-label}
+Drexel University · Dornsife School of Public Health
+:::
 
-#### EOH 812: Environmental Exposure Science
+::: {.course-entry}
+::: {.course-code}
+EOH 812
+:::
+::: {.course-title}
+Environmental Exposure Sciences
+:::
+::: {.course-role}
+Co-Instructor · Spring 2024
+:::
+:::
 
-Co-Instructor (Spring 2023, Spring 2024)
+::: {.course-entry}
+::: {.course-code}
+EOH 812
+:::
+::: {.course-title}
+Environmental Exposure Sciences
+:::
+::: {.course-role}
+Teaching Assistant · Spring 2023
+:::
+:::
+:::
 
-### Columbia University Mailman School of Public Health
+::: {.teaching-block}
+::: {.institution-label}
+Columbia University · Mailman School of Public Health
+:::
 
-#### EHSC P8371 - Public Health GIS
+::: {.course-entry}
+::: {.course-code}
+P8371
+:::
+::: {.course-title}
+Public Health GIS
+:::
+::: {.course-role}
+Teaching Assistant · Spring 2020
+:::
+:::
 
-Teaching assistant (Spring 2020)
-
-#### PUBHG4200: Environment, Health, and Justice: concepts and practice
-
-Teaching assistant & Course developer (Fall 2019 )
+::: {.course-entry}
+::: {.course-code}
+PUBHG 4200
+:::
+::: {.course-title}
+Environment, Health, and Justice: Concepts and Practice
+:::
+::: {.course-role}
+Teaching Assistant & Course Developer · Fall 2019
+:::
+:::
+:::
