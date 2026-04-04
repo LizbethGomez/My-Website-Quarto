@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b13ce7c7ea1f4c5861852fecc5ae4d5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e8213aa6def93b5d0e4c31acb26baf85.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -169,7 +169,11 @@ window.Quarto = {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="quarto-sidebar-header"><div class="sidebar-header-item">
+<div class="lang-toggle">
+<span class="lang-item lang-en"><a href="#">en</a></span> · <span class="lang-item lang-es"><a href="#">es</a></span>
+</div>
+</div></div>
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
       </a>
@@ -397,6 +401,39 @@ Aug 2021
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var path = window.location.pathname;
+
+  // Detect language from URL
+  var isES = path.includes('/es/') || /\/es(\/index\.html)?$/.test(path);
+
+  var enEl = document.querySelector('.lang-item.lang-en');
+  var esEl = document.querySelector('.lang-item.lang-es');
+  if (!enEl || !esEl) return;
+
+  var enLink = enEl.querySelector('a');
+  var esLink = esEl.querySelector('a');
+  if (!enLink || !esLink) return;
+
+  if (isES) {
+    // Spanish page — EN link maps to equivalent English page
+    var enPath = path.replace(/\/es\//, '/');
+    enLink.href = enPath;
+    // Mark ES as current
+    esEl.classList.add('lang-current');
+    esLink.removeAttribute('href');
+  } else {
+    // English page — ES link maps to /es/[file]
+    var parts = path.split('/');
+    var file  = parts.pop() || 'index.html';
+    esLink.href = parts.join('/') + '/es/' + file;
+    // Mark EN as current
+    enEl.classList.add('lang-current');
+    enLink.removeAttribute('href');
+  }
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

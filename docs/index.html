@@ -231,10 +231,9 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
 </main> <!-- /main -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var path = window.location.pathname;
-
-  // Detect language from URL
-  var isES = path.includes('/es/') || /\/es(\/index\.html)?$/.test(path);
+  // Use <html lang="..."> set by Quarto — reliable on any host or subdirectory
+  var lang  = (document.documentElement.lang || 'en').toLowerCase();
+  var isES  = lang.startsWith('es');
 
   var enEl = document.querySelector('.lang-item.lang-en');
   var esEl = document.querySelector('.lang-item.lang-es');
@@ -244,19 +243,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var esLink = esEl.querySelector('a');
   if (!enLink || !esLink) return;
 
+  // Get the current filename (e.g. "about.html", "index.html")
+  var parts    = window.location.pathname.split('/');
+  var fileName = parts[parts.length - 1] || 'index.html';
+
   if (isES) {
-    // Spanish page — EN link maps to equivalent English page
-    var enPath = path.replace(/\/es\//, '/');
-    enLink.href = enPath;
-    // Mark ES as current
+    // ES page → EN link goes UP one directory
+    enLink.href = '../' + fileName;
     esEl.classList.add('lang-current');
     esLink.removeAttribute('href');
   } else {
-    // English page — ES link maps to /es/[file]
-    var parts = path.split('/');
-    var file  = parts.pop() || 'index.html';
-    esLink.href = parts.join('/') + '/es/' + file;
-    // Mark EN as current
+    // EN page → ES link goes INTO es/ subfolder
+    esLink.href = 'es/' + fileName;
     enEl.classList.add('lang-current');
     enLink.removeAttribute('href');
   }

@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-b13ce7c7ea1f4c5861852fecc5ae4d5b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e8213aa6def93b5d0e4c31acb26baf85.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -106,7 +106,11 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="quarto-sidebar-header"><div class="sidebar-header-item">
+<div class="lang-toggle">
+<span class="lang-item lang-en"><a href="#">en</a></span> · <span class="lang-item lang-es"><a href="#">es</a></span>
+</div>
+</div></div>
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
       </a>
@@ -202,7 +206,7 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
 
 <div class="research-intro">
 <p>Environmental epidemiologists have long documented that air pollution worsens asthma, and that climate change compounds those harms. But a subtler question has emerged: does living in a polluted or socially disadvantaged environment also affect whether asthma treatments <em>work</em>?</p>
-<p>My research program sits at the intersection of environmental science, pharmacoepidemiology, and health equity — asking not just who gets sick, but who gets better, and why that differs.</p>
+<p>My research interests sit at the intersection of environmental science, pharmacoepidemiology, and health equity — asking not just who gets sick, but who gets better, and why that differs.</p>
 </div>
 <hr>
 <div class="research-threads">
@@ -212,7 +216,7 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
 </div>
 <section id="climate-drug-interactions-in-medicaid-populations" class="level3">
 <h3 class="anchored" data-anchor-id="climate-drug-interactions-in-medicaid-populations">Climate-Drug Interactions in Medicaid Populations</h3>
-<p>At Rutgers, I examine how climate exposures — extreme heat, wildfire smoke, PM₂.₅ — interact synergistically with medication use to produce adverse outcomes in vulnerable populations. Using national Medicaid data linked to gridded climate exposures at the ZIP code level, this work generates real-world evidence to inform clinical and policy decisions for populations disproportionately burdened by climate change.</p>
+<p>At Rutgers, I examine how climate exposures — extreme heat, wildfire smoke, PM 2.5 — interact synergistically with medication use to produce adverse outcomes in vulnerable populations. Using national Medicaid data linked to gridded climate exposures at the ZIP code level, this work generates real-world evidence to inform clinical and policy decisions for populations disproportionately burdened by climate change.</p>
 </section>
 </div>
 <div class="research-thread">
@@ -221,7 +225,7 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
 </div>
 <section id="environmental-modification-of-treatment-response" class="level3">
 <h3 class="anchored" data-anchor-id="environmental-modification-of-treatment-response">Environmental Modification of Treatment Response</h3>
-<p>The standard assumption in clinical trials is that treatment effects are uniform across the enrolled population. My work challenges this by testing whether ambient air pollution — PM₂.₅, NO₂, and ozone — modifies the efficacy of pharmacological therapies for asthma, including corticosteroids and biologic agents.</p>
+<p>The standard assumption in clinical trials is that treatment effects are uniform across the enrolled population. My work challenges this by testing whether ambient air pollution — PM₂₅, NO₂, and ozone — modifies the efficacy of pharmacological therapies for asthma, including corticosteroids and biologic agents.</p>
 <p>I apply effect modification methods to data from landmark asthma clinical trials (STICS, BARD). The question is not only whether a drug works on average, but <em>for whom</em> — and whether the environment a patient lives in is part of that answer.</p>
 </section>
 </div>
@@ -251,6 +255,39 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
 
 
 </main> <!-- /main -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var path = window.location.pathname;
+
+  // Detect language from URL
+  var isES = path.includes('/es/') || /\/es(\/index\.html)?$/.test(path);
+
+  var enEl = document.querySelector('.lang-item.lang-en');
+  var esEl = document.querySelector('.lang-item.lang-es');
+  if (!enEl || !esEl) return;
+
+  var enLink = enEl.querySelector('a');
+  var esLink = esEl.querySelector('a');
+  if (!enLink || !esLink) return;
+
+  if (isES) {
+    // Spanish page — EN link maps to equivalent English page
+    var enPath = path.replace(/\/es\//, '/');
+    enLink.href = enPath;
+    // Mark ES as current
+    esEl.classList.add('lang-current');
+    esLink.removeAttribute('href');
+  } else {
+    // English page — ES link maps to /es/[file]
+    var parts = path.split('/');
+    var file  = parts.pop() || 'index.html';
+    esLink.href = parts.join('/') + '/es/' + file;
+    // Mark EN as current
+    enEl.classList.add('lang-current');
+    enLink.removeAttribute('href');
+  }
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

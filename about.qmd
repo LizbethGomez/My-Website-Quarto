@@ -15,7 +15,7 @@ knitr::include_graphics("files/cityhall2.jpeg")
 
 ```
 
-I am a postdoctoral associate at the [Center for Climate, Health and Healthcare](https://climatehealth.rutgers.edu/) at Rutgers University, where I study how climate exposures — extreme heat, wildfire smoke, PM2.5 — interact with medication use to shape health outcomes in vulnerable populations. My work links national Medicaid data with gridded climate data to examine drug-environment interactions with direct policy implications.
+I am a postdoctoral associate at the [Center for Climate, Health and Healthcare](https://ifh.rutgers.edu/research/centers-and-programs/research-centers/center-for-climate-health-and-healthcare/) at Rutgers University, where I study how climate exposures — extreme heat, wildfire smoke, PM2.5 — interact with medication use to shape health outcomes in vulnerable populations. My work links national Medicaid data with gridded climate data to examine drug-environment interactions with direct policy implications.
 
 Previously, I was a postdoctoral researcher in the Department of Biostatistics, Epidemiology and Informatics at the Perelman School of Medicine, University of Pennsylvania, where I conducted comparative effectiveness studies using electronic health records from Penn Medicine.
 

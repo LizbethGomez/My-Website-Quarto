@@ -3,7 +3,9 @@
   "result": {
     "engine": "knitr",
     "markdown": "---\ntitle: \"\"\nformat:\n  html:\n    toc: false\n---\n\n\n::: {.cell}\n\n:::\n\n\n::: {.home-wrapper}\n\n::: {.home-hero}\n::: {.hero-name}\nLizbeth F. Gomez\n:::\n::: {.hero-img}\n![](files/image1.png)\n:::\n:::\n\n::: {.home-body}\n\n::: {.home-col-left}\n\n::: {.home-position}\nPostdoctoral Associate · Center for Climate, Health and Healthcare\nRutgers University\n:::\n\n::: {.home-bio}\nI am an **environmental epidemiologist** working at the intersection of air quality science, climate health, and clinical effectiveness research. My work asks a precise but consequential question: does the environment in which a patient lives affect whether they respond to treatment. And if so, who gets systematically left behind?\n\nAt Rutgers, I examine synergistic effects of climate exposures and medication use on health outcomes in vulnerable populations using national Medicaid data. My broader research program studies how ambient air pollution and social stress modify pharmaceutical treatment outcomes in asthma, drawing on clinical trial data, electronic health records, and methods from causal inference and comparative effectiveness research.\n:::\n\n::: {.home-page-links}\n[Research](/research.qmd) &ensp;[Publications](/publications.qmd) &ensp;[CV](/files/LFGomez-CV.pdf){target=\"_blank\"}\n:::\n\n::: {.home-social}\n[Email](mailto:liz.gomez@ifh.rutgers.edu) &nbsp;·&nbsp; [GitHub](https://github.com/LizbethGomez) &nbsp;·&nbsp; [Google Scholar](https://scholar.google.com/citations?user=1ZYXZL0AAAAJ&hl=en) &nbsp;·&nbsp; [Bluesky](https://bsky.app/profile/lizbethgomezf.bsky.social)\n:::\n\n:::\n\n::: {.home-col-right}\n\n::: {.home-edu}\n**PhD** · Environmental Epidemiology\nDrexel University, 2024\n\n**MPH** · Public Health\nColumbia University, 2020\n\n**BSc** · Biology\nCity College of New York, 2018\n:::\n\n:::\n\n:::\n\n:::\n",
-    "supporting": [],
+    "supporting": [
+      "index_files"
+    ],
     "filters": [
       "rmarkdown/pagebreak.lua"
     ],

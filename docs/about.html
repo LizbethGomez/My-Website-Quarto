@@ -222,7 +222,7 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
 </div>
 </div></div>
 </div>
-<p>I am a postdoctoral associate at the <a href="https://climatehealth.rutgers.edu/">Center for Climate, Health and Healthcare</a> at Rutgers University, where I study how climate exposures — extreme heat, wildfire smoke, PM2.5 — interact with medication use to shape health outcomes in vulnerable populations. My work links national Medicaid data with gridded climate data to examine drug-environment interactions with direct policy implications.</p>
+<p>I am a postdoctoral associate at the <a href="https://ifh.rutgers.edu/research/centers-and-programs/research-centers/center-for-climate-health-and-healthcare/">Center for Climate, Health and Healthcare</a> at Rutgers University, where I study how climate exposures — extreme heat, wildfire smoke, PM2.5 — interact with medication use to shape health outcomes in vulnerable populations. My work links national Medicaid data with gridded climate data to examine drug-environment interactions with direct policy implications.</p>
 <p>Previously, I was a postdoctoral researcher in the Department of Biostatistics, Epidemiology and Informatics at the Perelman School of Medicine, University of Pennsylvania, where I conducted comparative effectiveness studies using electronic health records from Penn Medicine.</p>
 <p>I completed my doctoral training at Drexel University’s <a href="https://drexel.edu/dornsife/academics/departments/environmental-occupational-health/">Dornsife School of Public Health</a> in Philadelphia, under the mentorship of Dr.&nbsp;Jane Clougherty. My dissertation examined how social and environmental factors modify the efficacy of pharmaceutical treatments for asthma — bringing an environmental science lens to questions that clinical research has typically treated in isolation.</p>
 <p>Prior to Drexel, I earned a Master of Public Health from <a href="https://www.publichealth.columbia.edu/academics/departments/environmental-health-sciences-ehs">Columbia University Mailman School of Public Health</a>, and a Bachelor of Science in Biology from the <a href="https://www.ccny.cuny.edu/">City College of New York</a>.</p>
@@ -235,10 +235,9 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
 </main> <!-- /main -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var path = window.location.pathname;
-
-  // Detect language from URL
-  var isES = path.includes('/es/') || /\/es(\/index\.html)?$/.test(path);
+  // Use <html lang="..."> set by Quarto — reliable on any host or subdirectory
+  var lang  = (document.documentElement.lang || 'en').toLowerCase();
+  var isES  = lang.startsWith('es');
 
   var enEl = document.querySelector('.lang-item.lang-en');
   var esEl = document.querySelector('.lang-item.lang-es');
@@ -248,19 +247,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var esLink = esEl.querySelector('a');
   if (!enLink || !esLink) return;
 
+  // Get the current filename (e.g. "about.html", "index.html")
+  var parts    = window.location.pathname.split('/');
+  var fileName = parts[parts.length - 1] || 'index.html';
+
   if (isES) {
-    // Spanish page — EN link maps to equivalent English page
-    var enPath = path.replace(/\/es\//, '/');
-    enLink.href = enPath;
-    // Mark ES as current
+    // ES page → EN link goes UP one directory
+    enLink.href = '../' + fileName;
     esEl.classList.add('lang-current');
     esLink.removeAttribute('href');
   } else {
-    // English page — ES link maps to /es/[file]
-    var parts = path.split('/');
-    var file  = parts.pop() || 'index.html';
-    esLink.href = parts.join('/') + '/es/' + file;
-    // Mark EN as current
+    // EN page → ES link goes INTO es/ subfolder
+    esLink.href = 'es/' + fileName;
     enEl.classList.add('lang-current');
     enLink.removeAttribute('href');
   }

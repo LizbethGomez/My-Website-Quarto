@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.25">
@@ -55,17 +55,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
 }</script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8FWX65NBJQ"></script>
@@ -94,11 +94,11 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../es/research.html">trabajo</a></li><li class="breadcrumb-item"><a href="../es/teaching.html">clases</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
   </nav>
@@ -133,7 +133,7 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text">trabajo</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
@@ -264,10 +264,9 @@ gtag('config', 'G-8FWX65NBJQ', { 'anonymize_ip': true});
 </main> <!-- /main -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var path = window.location.pathname;
-
-  // Detect language from URL
-  var isES = path.includes('/es/') || /\/es(\/index\.html)?$/.test(path);
+  // Use <html lang="..."> set by Quarto — reliable on any host or subdirectory
+  var lang  = (document.documentElement.lang || 'en').toLowerCase();
+  var isES  = lang.startsWith('es');
 
   var enEl = document.querySelector('.lang-item.lang-en');
   var esEl = document.querySelector('.lang-item.lang-es');
@@ -277,19 +276,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var esLink = esEl.querySelector('a');
   if (!enLink || !esLink) return;
 
+  // Get the current filename (e.g. "about.html", "index.html")
+  var parts    = window.location.pathname.split('/');
+  var fileName = parts[parts.length - 1] || 'index.html';
+
   if (isES) {
-    // Spanish page — EN link maps to equivalent English page
-    var enPath = path.replace(/\/es\//, '/');
-    enLink.href = enPath;
-    // Mark ES as current
+    // ES page → EN link goes UP one directory
+    enLink.href = '../' + fileName;
     esEl.classList.add('lang-current');
     esLink.removeAttribute('href');
   } else {
-    // English page — ES link maps to /es/[file]
-    var parts = path.split('/');
-    var file  = parts.pop() || 'index.html';
-    esLink.href = parts.join('/') + '/es/' + file;
-    // Mark EN as current
+    // EN page → ES link goes INTO es/ subfolder
+    esLink.href = 'es/' + fileName;
     enEl.classList.add('lang-current');
     enLink.removeAttribute('href');
   }
@@ -320,12 +318,12 @@ document.addEventListener('DOMContentLoaded', function () {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiado");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiado");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
