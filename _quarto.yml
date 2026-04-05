@@ -16,7 +16,7 @@ website:
       search: false
       background: "white"
       foreground: "dark"
-      header: "<div class='lang-toggle'><span class='lang-item lang-en'><a href='#'>en</a></span>&thinsp;·&thinsp;<span class='lang-item lang-es'><a href='#'>es</a></span></div>"
+      header: "<div id='lang-toggle-anchor'></div>"
       contents:
         - text: "home"
           href: index.qmd
@@ -42,7 +42,7 @@ website:
       search: false
       background: "white"
       foreground: "dark"
-      header: "<div class='lang-toggle'><span class='lang-item lang-en'><a href='#'>en</a></span>&thinsp;·&thinsp;<span class='lang-item lang-es'><a href='#'>es</a></span></div>"
+      header: "<div id='lang-toggle-anchor'></div>"
       contents:
         - text: "inicio"
           href: es/index.qmd
