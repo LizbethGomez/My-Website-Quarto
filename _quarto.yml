@@ -10,15 +10,6 @@ website:
   google-analytics: "G-8FWX65NBJQ"
   site-url: "https://www.lizbethgomezf.com"
 
-  open-graph:
-    site-name: "Lizbeth F. Gomez"
-    description: "Environmental epidemiologist at UPenn. Research at the intersection of air quality and clinical treatment efficacy in asthma."
-    image: "files/IMG_1004.jpg"
-
-  twitter-card:
-    card-style: summary
-    description: "Environmental epidemiologist at UPenn. Research at the intersection of air quality and clinical treatment efficacy in asthma."
-
   sidebar:
     - id: en
       style: "docked"
