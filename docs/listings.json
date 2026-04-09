@@ -9,7 +9,11 @@
   },
   {
     "listing": "/notes.html",
-    "items": []
+    "items": [
+      "/posts/NAM/index.html",
+      "/posts/In-2050-we-will-have-flying-cars/index.html",
+      "/posts/in-my-blogging-era/index.html"
+    ]
   },
   {
     "listing": "/es/notes.html",
