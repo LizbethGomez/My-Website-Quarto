@@ -7,7 +7,7 @@ format:
 
 ```{r}
 #| output: false
-file.copy("files/LFGomez-CV.pdf", "docs/files/LFGomez-CV.pdf", overwrite = TRUE)
+file.copy("files/Gomez_CV042026.pdf", "docs/files/Gomez_CV042026.pdf", overwrite = TRUE)
 ```
 
 ::: {.home-wrapper}
@@ -37,7 +37,7 @@ At Rutgers, I examine synergistic effects of climate exposures and medication us
 :::
 
 ::: {.home-page-links}
-[Research](/research.qmd) &ensp;[Publications](/publications.qmd) &ensp;[CV](/files/LFGomez-CV.pdf){target="_blank"}
+[Research](/research.qmd) &ensp;[Publications](/publications.qmd) &ensp;[CV](/files/Gomez_CV042026.pdf){target="_blank"}
 :::
 
 ::: {.home-social}

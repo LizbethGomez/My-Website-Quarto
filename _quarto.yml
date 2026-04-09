@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-  - "files/LFGomez-CV.pdf"
+  - "files/Gomez_CV042026.pdf"
 
 website:
   title: "Lizbeth F. Gomez"
@@ -35,7 +35,7 @@ website:
         - text: "writing"
           href: notes.qmd
         - text: "cv ↗"
-          href: "files/LFGomez-CV.pdf"
+          href: "files/Gomez_CV042026.pdf"
 
     - id: es
       style: "docked"
@@ -61,7 +61,7 @@ website:
         - text: "escritura"
           href: es/notes.qmd
         - text: "cv ↗"
-          href: "files/LFGomez-CV.pdf"
+          href: "files/LFGomez-CV4-26.pdf"
 
   page-footer:
     left: "© 2026 Lizbeth F. Gomez"
