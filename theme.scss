@@ -560,6 +560,17 @@ main.content {
   }
 }
 
+// ── BLOG POST BODY LINKS ──────────────────────
+// Scoped to article paragraphs only — won't affect nav, footer, or other pages
+article p a {
+  border-bottom: 1px solid #aaaaaa;
+  transition: border-bottom-color 0.15s ease, opacity 0.15s ease;
+  &:hover {
+    border-bottom-color: #0f0f0f;
+    opacity: 1;
+  }
+}
+
 // ── WRITING / BLOG ────────────────────────────
 .listing-item {
   .listing-title a {
